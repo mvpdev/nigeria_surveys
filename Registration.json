@@ -1,0 +1,78 @@
+{
+    "type": "survey", 
+    "name": "Registration", 
+    "children": [
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/meta.xls"
+        }, 
+        {
+            "type": "text", 
+            "name": "name", 
+            "label": "What is your name?"
+        }, 
+        {
+            "choices": [
+                {
+                    "value": "male", 
+                    "label": "Male"
+                }, 
+                {
+                    "value": "female", 
+                    "label": "Female"
+                }
+            ], 
+            "type": "select one", 
+            "name": "sex", 
+            "label": "What is your gender?"
+        }, 
+        {
+            "type": "date", 
+            "name": "birth_date", 
+            "label": "When were you born?"
+        }, 
+        {
+            "choices": [
+                {
+                    "value": "English", 
+                    "label": "English"
+                }, 
+                {
+                    "value": "Hausa", 
+                    "label": "Hausa"
+                }, 
+                {
+                    "value": "Igbo", 
+                    "label": "Igbo"
+                }, 
+                {
+                    "value": "Yoruba", 
+                    "label": "Yoruba"
+                }, 
+                {
+                    "value": "Fulfulde", 
+                    "label": "Fulfulde"
+                }, 
+                {
+                    "value": "Kanuri", 
+                    "label": "Kanuri"
+                }, 
+                {
+                    "value": "Ibibio", 
+                    "label": "Ibibio"
+                }
+            ], 
+            "type": "select all that apply or specify other", 
+            "name": "languages", 
+            "label": "What languages do you speak?"
+        }, 
+        {
+            "bind": {
+                "constraint": "regex(., '^\\d{3}$')"
+            }, 
+            "type": "text", 
+            "name": "phone_id", 
+            "label": "What is the three digit label on the back of this phone?"
+        }
+    ]
+}

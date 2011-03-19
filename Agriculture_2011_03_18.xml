@@ -1,0 +1,1318 @@
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns="http://www.w3.org/2002/xforms">
+  <h:head>
+    <h:title>Agriculture</h:title>
+    <model>
+      <instance>
+        <Agriculture id="Agriculture_2011_03_18">
+          <imei/>
+          <start_time/>
+          <end_time/>
+          <research_assistant_name/>
+          <photo/>
+          <location>
+            <gps/>
+            <zone/>
+            <state_in_northwest/>
+            <state_in_southeast/>
+            <lga_in_jigawa/>
+            <lga_in_kaduna/>
+            <lga_in_kano/>
+            <lga_in_katsina/>
+            <lga_in_kebbi/>
+            <lga_in_sokoto/>
+            <lga_in_zamfara/>
+            <lga_in_abia/>
+            <lga_in_anambra/>
+            <lga_in_ebonyi/>
+            <lga_in_enugu/>
+            <lga_in_imo/>
+            <ward/>
+            <community/>
+          </location>
+          <lga_agriculture_point_person_name/>
+          <lga_agriculture_point_person_phone_number/>
+          <instructions_crops/>
+          <crop>
+            <name/>
+            <price_per_kg/>
+            <price_during_harvest/>
+            <price_during_lean_season/>
+            <price_seeds/>
+            <price_fertilizer/>
+            <price_pesticide/>
+            <price_seedlings/>
+            <price_tractor/>
+          </crop>
+          <instructions_livestock/>
+          <livestock>
+            <name_livestock/>
+            <price_animal/>
+            <price_animal_harvest/>
+            <price_animal_lean_season/>
+            <price_feed_kg/>
+            <cost_vet/>
+            <cost_insemination/>
+            <cost_shed/>
+            <cost_forrage_kg/>
+          </livestock>
+          <instructions_fish/>
+          <fish>
+            <name_fish/>
+            <price_crop_harvest/>
+            <price_crop_lean_season/>
+            <cost_fish_pond/>
+            <cost_fingerlets/>
+            <price_fish_net/>
+            <price_fish_boat/>
+            <cost_docking/>
+          </fish>
+          <instructions_facilities/>
+          <warehousing>
+            <silos>
+              <num_total_storage/>
+              <num_functioning_storage/>
+              <num_need_rehab_storage/>
+              <num_staff_storage/>
+              <capacity_storage/>
+              <cost_construction_storage/>
+              <cost_maintain_storage/>
+              <cost_rehab_storage/>
+              <cost_admin_storage/>
+            </silos>
+            <warehouses>
+              <num_total_storage/>
+              <num_functioning_storage/>
+              <num_need_rehab_storage/>
+              <num_staff_storage/>
+              <capacity_storage/>
+              <cost_construction_storage/>
+              <cost_maintain_storage/>
+              <cost_rehab_storage/>
+              <cost_admin_storage/>
+            </warehouses>
+          </warehousing>
+          <instructions_orgs/>
+          <producer_orgs>
+            <federations>
+              <num_orgs_total/>
+              <num_orgs_staff/>
+              <num_orgs_members/>
+              <num_orgs_active/>
+            </federations>
+            <cooperatives>
+              <num_orgs_total/>
+              <num_orgs_staff/>
+              <num_orgs_members/>
+              <num_orgs_active/>
+            </cooperatives>
+            <associations>
+              <num_orgs_total/>
+              <num_orgs_staff/>
+              <num_orgs_members/>
+              <num_orgs_active/>
+            </associations>
+            <groups>
+              <num_orgs_total/>
+              <num_orgs_staff/>
+              <num_orgs_members/>
+              <num_orgs_active/>
+            </groups>
+          </producer_orgs>
+          <instructions_finance/>
+          <financing>
+            <commercial_bank>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </commercial_bank>
+            <agri_bank>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </agri_bank>
+            <state_bank>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </state_bank>
+            <private_bank>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </private_bank>
+            <micro_finance_instit>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </micro_finance_instit>
+            <cooperative_finance>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </cooperative_finance>
+            <other_finance>
+              <num_finance_total/>
+              <num_finance_clients/>
+              <loan_portfolio/>
+              <avg_loan_size_indiv/>
+              <avg_loan_size_grp/>
+            </other_finance>
+          </financing>
+          <instructions_input_cost/>
+          <input_cost>
+            <crops>
+              <num_ext_workers/>
+              <salary_ext_workers/>
+              <cost_admin_ext_workers/>
+              <cost_transport/>
+            </crops>
+            <livestock>
+              <num_ext_workers/>
+              <salary_ext_workers/>
+              <cost_admin_ext_workers/>
+              <cost_transport/>
+            </livestock>
+            <fish>
+              <num_ext_workers/>
+              <salary_ext_workers/>
+              <cost_admin_ext_workers/>
+              <cost_transport/>
+            </fish>
+          </input_cost>
+          <num_agro_dealers/>
+          <num_private_buyers/>
+          <num_agri_research_ctr/>
+          <instructions_irrigation/>
+          <irrigation>
+            <wtr_control>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </wtr_control>
+            <water_storage_pond>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </water_storage_pond>
+            <water_storage_tank>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </water_storage_tank>
+            <well_deep>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </well_deep>
+            <well_shallow>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </well_shallow>
+            <borehole>
+              <num_total_irrigation/>
+              <num_functioning_irrigation/>
+              <num_need_rehab_irrigation/>
+              <num_staff_irrigation/>
+              <num_hh_served_irrigation/>
+              <cost_construction_irrigation/>
+              <cost_maintain_irrigation/>
+              <cost_admin_irrigation/>
+            </borehole>
+          </irrigation>
+        </Agriculture>
+      </instance>
+      <bind nodeset="/Agriculture/imei" jr:preloadParams="deviceid" required="true()" type="string" jr:preload="property"/>
+      <bind nodeset="/Agriculture/start_time" jr:preloadParams="start" required="true()" type="dateTime" jr:preload="timestamp"/>
+      <bind nodeset="/Agriculture/end_time" jr:preloadParams="end" required="true()" type="dateTime" jr:preload="timestamp"/>
+      <bind nodeset="/Agriculture/research_assistant_name" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/photo" required="true()"/>
+      <bind nodeset="/Agriculture/location/gps" type="geopoint" required="true()"/>
+      <bind nodeset="/Agriculture/location/zone" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/state_in_northwest" relevant="/Agriculture/location/zone='northwest'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/state_in_southeast" relevant="/Agriculture/location/zone='southeast'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_jigawa" relevant="/Agriculture/location/state_in_northwest='jigawa'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_kaduna" relevant="/Agriculture/location/state_in_northwest='kaduna'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_kano" relevant="/Agriculture/location/state_in_northwest='kano'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_katsina" relevant="/Agriculture/location/state_in_northwest='katsina'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_kebbi" relevant="/Agriculture/location/state_in_northwest='kebbi'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_sokoto" relevant="/Agriculture/location/state_in_northwest='sokoto'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_zamfara" relevant="/Agriculture/location/state_in_northwest='zamfara'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_abia" relevant="/Agriculture/location/state_in_southeast='abia'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_anambra" relevant="/Agriculture/location/state_in_southeast='anambra'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_ebonyi" relevant="/Agriculture/location/state_in_southeast='ebonyi'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_enugu" relevant="/Agriculture/location/state_in_southeast='enugu'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/lga_in_imo" relevant="/Agriculture/location/state_in_southeast='imo'" type="select1" required="true()"/>
+      <bind nodeset="/Agriculture/location/ward" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/location/community" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/lga_agriculture_point_person_name" type="string" required="true()"/>
+      <bind required="true()" nodeset="/Agriculture/lga_agriculture_point_person_phone_number" type="string" constraint="regex(., '^\d*$')"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_crops" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/crop/name" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_per_kg" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_during_harvest" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_during_lean_season" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_seeds" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_fertilizer" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_pesticide" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_seedlings" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/crop/price_tractor" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_livestock" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/livestock/name_livestock" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/price_animal" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/price_animal_harvest" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/price_animal_lean_season" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/price_feed_kg" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/cost_vet" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/cost_insemination" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/cost_shed" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/livestock/cost_forrage_kg" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_fish" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/fish/name_fish" type="string" required="true()"/>
+      <bind nodeset="/Agriculture/fish/price_crop_harvest" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/price_crop_lean_season" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/cost_fish_pond" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/cost_fingerlets" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/price_fish_net" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/price_fish_boat" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/fish/cost_docking" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_facilities" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/num_total_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/num_functioning_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/num_need_rehab_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/num_staff_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/capacity_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/cost_construction_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/cost_maintain_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/cost_rehab_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/silos/cost_admin_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/num_total_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/num_functioning_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/num_need_rehab_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/num_staff_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/capacity_storage" relevant="../num_total_storage&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/cost_construction_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/cost_maintain_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/cost_rehab_storage" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/warehousing/warehouses/cost_admin_storage" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_orgs" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/producer_orgs/federations/num_orgs_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/federations/num_orgs_staff" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/federations/num_orgs_members" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/federations/num_orgs_active" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/cooperatives/num_orgs_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/cooperatives/num_orgs_staff" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/cooperatives/num_orgs_members" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/cooperatives/num_orgs_active" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/associations/num_orgs_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/associations/num_orgs_staff" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/associations/num_orgs_members" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/associations/num_orgs_active" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/groups/num_orgs_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/groups/num_orgs_staff" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/groups/num_orgs_members" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/producer_orgs/groups/num_orgs_active" relevant="../num_orgs_total&gt;0" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_finance" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/financing/commercial_bank/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/commercial_bank/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/commercial_bank/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/commercial_bank/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/commercial_bank/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/agri_bank/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/agri_bank/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/agri_bank/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/agri_bank/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/agri_bank/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/state_bank/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/state_bank/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/state_bank/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/state_bank/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/state_bank/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/private_bank/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/private_bank/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/private_bank/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/private_bank/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/private_bank/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/micro_finance_instit/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/micro_finance_instit/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/micro_finance_instit/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/micro_finance_instit/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/micro_finance_instit/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/cooperative_finance/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/cooperative_finance/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/cooperative_finance/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/cooperative_finance/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/cooperative_finance/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/other_finance/num_finance_total" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/other_finance/num_finance_clients" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/other_finance/loan_portfolio" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/other_finance/avg_loan_size_indiv" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/financing/other_finance/avg_loan_size_grp" relevant="../num_finance_total&gt;0" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_input_cost" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/input_cost/crops/num_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/crops/salary_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/crops/cost_admin_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/crops/cost_transport" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/livestock/num_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/livestock/salary_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/livestock/cost_admin_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/livestock/cost_transport" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/fish/num_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/fish/salary_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/fish/cost_admin_ext_workers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/input_cost/fish/cost_transport" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/num_agro_dealers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/num_private_buyers" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/num_agri_research_ctr" type="int" required="true()"/>
+      <bind readonly="true()" nodeset="/Agriculture/instructions_irrigation" type="string" required="false()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/wtr_control/cost_admin_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_pond/cost_admin_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/water_storage_tank/cost_admin_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_deep/cost_admin_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/well_shallow/cost_admin_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/num_total_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/num_functioning_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/num_need_rehab_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/num_staff_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/num_hh_served_irrigation" relevant="../num_total_irrigation&gt;0" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/cost_construction_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/cost_maintain_irrigation" type="int" required="true()"/>
+      <bind nodeset="/Agriculture/irrigation/borehole/cost_admin_irrigation" type="int" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Agriculture/research_assistant_name">
+      <label>Research Assistant's Name</label>
+    </input>
+    <upload ref="/Agriculture/photo" mediatype="image/*">
+      <label>Photo of Facility</label>
+    </upload>
+    <group nodeset="/Agriculture/location">
+      <label>Location</label>
+      <input ref="/Agriculture/location/gps">
+        <label>Geocode of Facility</label>
+        <hint>Capture the geocode before entering the facility building.</hint>
+      </input>
+      <select1 ref="/Agriculture/location/zone">
+        <label>Zone</label>
+        <item>
+          <label>Northwest</label>
+          <value>northwest</value>
+        </item>
+        <item>
+          <label>Southeast</label>
+          <value>southeast</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/state_in_northwest">
+        <label>State</label>
+        <item>
+          <label>Jigawa</label>
+          <value>jigawa</value>
+        </item>
+        <item>
+          <label>Kaduna</label>
+          <value>kaduna</value>
+        </item>
+        <item>
+          <label>Kano</label>
+          <value>kano</value>
+        </item>
+        <item>
+          <label>Katsina</label>
+          <value>katsina</value>
+        </item>
+        <item>
+          <label>Kebbi</label>
+          <value>kebbi</value>
+        </item>
+        <item>
+          <label>Sokoto</label>
+          <value>sokoto</value>
+        </item>
+        <item>
+          <label>Zamfara</label>
+          <value>zamfara</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/state_in_southeast">
+        <label>State</label>
+        <item>
+          <label>Abia</label>
+          <value>abia</value>
+        </item>
+        <item>
+          <label>Anambra</label>
+          <value>anambra</value>
+        </item>
+        <item>
+          <label>Ebonyi</label>
+          <value>ebonyi</value>
+        </item>
+        <item>
+          <label>Enugu</label>
+          <value>enugu</value>
+        </item>
+        <item>
+          <label>Imo</label>
+          <value>imo</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_jigawa">
+        <label>LGA</label>
+        <item>
+          <label>Guri</label>
+          <value>guri</value>
+        </item>
+        <item>
+          <label>Sule Tankakar</label>
+          <value>sule_tankakar</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_kaduna">
+        <label>LGA</label>
+        <item>
+          <label>Birnin Gwari</label>
+          <value>birnin_gwari</value>
+        </item>
+        <item>
+          <label>Ikara</label>
+          <value>ikara</value>
+        </item>
+        <item>
+          <label>Kachia</label>
+          <value>kachia</value>
+        </item>
+        <item>
+          <label>Lere</label>
+          <value>lere</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_kano">
+        <label>LGA</label>
+        <item>
+          <label>Gabasawa</label>
+          <value>gabasawa</value>
+        </item>
+        <item>
+          <label>Garun Mallam</label>
+          <value>garun_mallam</value>
+        </item>
+        <item>
+          <label>Takai</label>
+          <value>takai</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_katsina">
+        <label>LGA</label>
+        <item>
+          <label>Mashi</label>
+          <value>mashi</value>
+        </item>
+        <item>
+          <label>Musawa</label>
+          <value>musawa</value>
+        </item>
+        <item>
+          <label>kaita</label>
+          <value>kaita</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_kebbi">
+        <label>LGA</label>
+        <item>
+          <label>Augie</label>
+          <value>augie</value>
+        </item>
+        <item>
+          <label>Bunza</label>
+          <value>bunza</value>
+        </item>
+        <item>
+          <label>Suru</label>
+          <value>suru</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_sokoto">
+        <label>LGA</label>
+        <item>
+          <label>Binji</label>
+          <value>binji</value>
+        </item>
+        <item>
+          <label>Illela</label>
+          <value>illela</value>
+        </item>
+        <item>
+          <label>Tambuwal</label>
+          <value>tambuwal</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_zamfara">
+        <label>LGA</label>
+        <item>
+          <label>Bukkuyum</label>
+          <value>bukkuyum</value>
+        </item>
+        <item>
+          <label>Maru</label>
+          <value>maru</value>
+        </item>
+        <item>
+          <label>Zurmi</label>
+          <value>zurmi</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_abia">
+        <label>LGA</label>
+        <item>
+          <label>Ikwuano</label>
+          <value>ikwuano</value>
+        </item>
+        <item>
+          <label>Obi Nwa</label>
+          <value>obi_nwa</value>
+        </item>
+        <item>
+          <label>Ohafia</label>
+          <value>ohafia</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_anambra">
+        <label>LGA</label>
+        <item>
+          <label>Anambra West</label>
+          <value>anambra_west</value>
+        </item>
+        <item>
+          <label>Awka North</label>
+          <value>awka_north</value>
+        </item>
+        <item>
+          <label>Orumba South</label>
+          <value>orumba_south</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_ebonyi">
+        <label>LGA</label>
+        <item>
+          <label>Afikpo South</label>
+          <value>afikpo_south</value>
+        </item>
+        <item>
+          <label>Ikwo</label>
+          <value>ikwo</value>
+        </item>
+        <item>
+          <label>Izzi</label>
+          <value>izzi</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_enugu">
+        <label>LGA</label>
+        <item>
+          <label>Aninri</label>
+          <value>aninri</value>
+        </item>
+        <item>
+          <label>Igbo Etiti</label>
+          <value>igbo_etiti</value>
+        </item>
+        <item>
+          <label>Isi-Uzo</label>
+          <value>isi_uzo</value>
+        </item>
+      </select1>
+      <select1 ref="/Agriculture/location/lga_in_imo">
+        <label>LGA</label>
+        <item>
+          <label>Ngor-Okpala</label>
+          <value>ngor_okpala</value>
+        </item>
+        <item>
+          <label>Unuimo</label>
+          <value>unuimo</value>
+        </item>
+      </select1>
+      <input ref="/Agriculture/location/ward">
+        <label>Ward</label>
+      </input>
+      <input ref="/Agriculture/location/community">
+        <label>Community</label>
+      </input>
+    </group>
+    <input ref="/Agriculture/lga_agriculture_point_person_name">
+      <label>Name of LGA Agriculture Point Person</label>
+    </input>
+    <input ref="/Agriculture/lga_agriculture_point_person_phone_number">
+      <label>Contact Phone Number of LGA Agriculture Point Person</label>
+      <hint>Enter numbers only, '0' for missing.</hint>
+    </input>
+    <input ref="/Agriculture/instructions_crops">
+      <label>Please list the MOST COMMONLY GROWN crops in the LGA. List in order of importance. All prices are market prices per kilogram in Naira.</label>
+    </input>
+    <group>
+      <label>Crop</label>
+      <repeat nodeset="/Agriculture/crop">
+        <input ref="/Agriculture/crop/name">
+          <label>Name of crop</label>
+        </input>
+        <input ref="/Agriculture/crop/price_per_kg">
+          <label>Average crop price in the LGA</label>
+        </input>
+        <input ref="/Agriculture/crop/price_during_harvest">
+          <label>Average crop price during harvest</label>
+        </input>
+        <input ref="/Agriculture/crop/price_during_lean_season">
+          <label>Average crop price during lean season</label>
+        </input>
+        <input ref="/Agriculture/crop/price_seeds">
+          <label>Price of seeds</label>
+        </input>
+        <input ref="/Agriculture/crop/price_fertilizer">
+          <label>Price of fertilizer</label>
+        </input>
+        <input ref="/Agriculture/crop/price_pesticide">
+          <label>Price of pesticide</label>
+        </input>
+        <input ref="/Agriculture/crop/price_seedlings">
+          <label>Price of seedlings</label>
+        </input>
+        <input ref="/Agriculture/crop/price_tractor">
+          <label>Price of renting a tractor to plow 1 hectare</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/Agriculture/instructions_livestock">
+      <label>Please list the MOST COMMONLY REARED livestock in the LGA. List in order of importance. All prices are market prices in Naira.</label>
+    </input>
+    <group>
+      <label>Livestock</label>
+      <repeat nodeset="/Agriculture/livestock">
+        <input ref="/Agriculture/livestock/name_livestock">
+          <label>Name of livestock</label>
+        </input>
+        <input ref="/Agriculture/livestock/price_animal">
+          <label>Market price per animal</label>
+        </input>
+        <input ref="/Agriculture/livestock/price_animal_harvest">
+          <label>Average price per animal during harvest</label>
+        </input>
+        <input ref="/Agriculture/livestock/price_animal_lean_season">
+          <label>Average price per animal during during lean season</label>
+        </input>
+        <input ref="/Agriculture/livestock/price_feed_kg">
+          <label>Market price of feed per kilogram</label>
+        </input>
+        <input ref="/Agriculture/livestock/cost_vet">
+          <label>Cost of veterinary services per animal</label>
+        </input>
+        <input ref="/Agriculture/livestock/cost_insemination">
+          <label>Cost of artificial insemination per animal</label>
+        </input>
+        <input ref="/Agriculture/livestock/cost_shed">
+          <label>Cost of shed</label>
+        </input>
+        <input ref="/Agriculture/livestock/cost_forrage_kg">
+          <label>Cost of forrage per kilogram</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/Agriculture/instructions_fish">
+      <label>Please list the MOST COMMONLY REARED fish in the LGA. List in order of importance. All prices are market prices in Naira.</label>
+    </input>
+    <group>
+      <label>Fish</label>
+      <repeat nodeset="/Agriculture/fish">
+        <input ref="/Agriculture/fish/name_fish">
+          <label>Name of fish</label>
+        </input>
+        <input ref="/Agriculture/fish/price_crop_harvest">
+          <label>Average fish price during harvest</label>
+        </input>
+        <input ref="/Agriculture/fish/price_crop_lean_season">
+          <label>Average fish price during lean season</label>
+        </input>
+        <input ref="/Agriculture/fish/cost_fish_pond">
+          <label>Cost of constructing fish pond</label>
+        </input>
+        <input ref="/Agriculture/fish/cost_fingerlets">
+          <label>Cost of fingerlets</label>
+        </input>
+        <input ref="/Agriculture/fish/price_fish_net">
+          <label>Market price of fishing net</label>
+        </input>
+        <input ref="/Agriculture/fish/price_fish_boat">
+          <label>Market price of fishing boat</label>
+        </input>
+        <input ref="/Agriculture/fish/cost_docking">
+          <label>Cost of docking boat / landing facility</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/Agriculture/instructions_facilities">
+      <label>I will now ask you about warehousing facilities in the LGA</label>
+    </input>
+    <group nodeset="/Agriculture/warehousing">
+      <label>Warehousing facilities</label>
+      <group nodeset="/Agriculture/warehousing/silos">
+        <label>Silos</label>
+        <input ref="/Agriculture/warehousing/silos/num_total_storage">
+          <label>Total number of Silos</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/num_functioning_storage">
+          <label>Number of Silos functioning</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/num_need_rehab_storage">
+          <label>Number of Silos that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/num_staff_storage">
+          <label>Number of staff working for Silos in LGA</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/capacity_storage">
+          <label>Avg storage capacity of a Silos (in metric tons)</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/cost_construction_storage">
+          <label>Avg cost of construction of a Silos</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/cost_maintain_storage">
+          <label>Avg annual cost of maintaining a Silos</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/cost_rehab_storage">
+          <label>Avg annual cost of rehabilitating a Silos</label>
+        </input>
+        <input ref="/Agriculture/warehousing/silos/cost_admin_storage">
+          <label>Avg additional administrative cost per Silos</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/warehousing/warehouses">
+        <label>Warehouses</label>
+        <input ref="/Agriculture/warehousing/warehouses/num_total_storage">
+          <label>Total number of Warehouses</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/num_functioning_storage">
+          <label>Number of Warehouses functioning</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/num_need_rehab_storage">
+          <label>Number of Warehouses that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/num_staff_storage">
+          <label>Number of staff working for Warehouses in LGA</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/capacity_storage">
+          <label>Avg storage capacity of a Warehouses (in metric tons)</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/cost_construction_storage">
+          <label>Avg cost of construction of a Warehouses</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/cost_maintain_storage">
+          <label>Avg annual cost of maintaining a Warehouses</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/cost_rehab_storage">
+          <label>Avg annual cost of rehabilitating a Warehouses</label>
+        </input>
+        <input ref="/Agriculture/warehousing/warehouses/cost_admin_storage">
+          <label>Avg additional administrative cost per Warehouses</label>
+        </input>
+      </group>
+    </group>
+    <input ref="/Agriculture/instructions_orgs">
+      <label>I will now ask you about producer-based organizations in the LGA.</label>
+    </input>
+    <group nodeset="/Agriculture/producer_orgs">
+      <label>Producer organizations</label>
+      <group nodeset="/Agriculture/producer_orgs/federations">
+        <label>Federations</label>
+        <input ref="/Agriculture/producer_orgs/federations/num_orgs_total">
+          <label>Federations: Number of organizations</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/federations/num_orgs_staff">
+          <label>Federations: Number of staff</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/federations/num_orgs_members">
+          <label>Federations: Number of members</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/federations/num_orgs_active">
+          <label>Federations: How many of these organizations are active?</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/producer_orgs/cooperatives">
+        <label>Cooperatives</label>
+        <input ref="/Agriculture/producer_orgs/cooperatives/num_orgs_total">
+          <label>Cooperatives: Number of organizations</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/cooperatives/num_orgs_staff">
+          <label>Cooperatives: Number of staff</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/cooperatives/num_orgs_members">
+          <label>Cooperatives: Number of members</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/cooperatives/num_orgs_active">
+          <label>Cooperatives: How many of these organizations are active?</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/producer_orgs/associations">
+        <label>Associations</label>
+        <input ref="/Agriculture/producer_orgs/associations/num_orgs_total">
+          <label>Associations: Number of organizations</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/associations/num_orgs_staff">
+          <label>Associations: Number of staff</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/associations/num_orgs_members">
+          <label>Associations: Number of members</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/associations/num_orgs_active">
+          <label>Associations: How many of these organizations are active?</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/producer_orgs/groups">
+        <label>Groups</label>
+        <input ref="/Agriculture/producer_orgs/groups/num_orgs_total">
+          <label>Groups: Number of organizations</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/groups/num_orgs_staff">
+          <label>Groups: Number of staff</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/groups/num_orgs_members">
+          <label>Groups: Number of members</label>
+        </input>
+        <input ref="/Agriculture/producer_orgs/groups/num_orgs_active">
+          <label>Groups: How many of these organizations are active?</label>
+        </input>
+      </group>
+    </group>
+    <input ref="/Agriculture/instructions_finance">
+      <label>I will now ask you about agricultural finance institutions in the LGA.</label>
+    </input>
+    <group nodeset="/Agriculture/financing">
+      <label>Agricultural Markets, Finance and Costs</label>
+      <group nodeset="/Agriculture/financing/commercial_bank">
+        <label>Commercial Bank</label>
+        <input ref="/Agriculture/financing/commercial_bank/num_finance_total">
+          <label>Commercial Bank: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/commercial_bank/num_finance_clients">
+          <label>Commercial Bank: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/commercial_bank/loan_portfolio">
+          <label>Commercial Bank: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/commercial_bank/avg_loan_size_indiv">
+          <label>Commercial Bank: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/commercial_bank/avg_loan_size_grp">
+          <label>Commercial Bank: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/agri_bank">
+        <label>Agricultural Bank</label>
+        <input ref="/Agriculture/financing/agri_bank/num_finance_total">
+          <label>Agricultural Bank: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/agri_bank/num_finance_clients">
+          <label>Agricultural Bank: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/agri_bank/loan_portfolio">
+          <label>Agricultural Bank: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/agri_bank/avg_loan_size_indiv">
+          <label>Agricultural Bank: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/agri_bank/avg_loan_size_grp">
+          <label>Agricultural Bank: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/state_bank">
+        <label>State Bank</label>
+        <input ref="/Agriculture/financing/state_bank/num_finance_total">
+          <label>State Bank: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/state_bank/num_finance_clients">
+          <label>State Bank: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/state_bank/loan_portfolio">
+          <label>State Bank: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/state_bank/avg_loan_size_indiv">
+          <label>State Bank: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/state_bank/avg_loan_size_grp">
+          <label>State Bank: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/private_bank">
+        <label>Private Bank</label>
+        <input ref="/Agriculture/financing/private_bank/num_finance_total">
+          <label>Private Bank: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/private_bank/num_finance_clients">
+          <label>Private Bank: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/private_bank/loan_portfolio">
+          <label>Private Bank: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/private_bank/avg_loan_size_indiv">
+          <label>Private Bank: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/private_bank/avg_loan_size_grp">
+          <label>Private Bank: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/micro_finance_instit">
+        <label>Micro-finance Institution</label>
+        <input ref="/Agriculture/financing/micro_finance_instit/num_finance_total">
+          <label>Micro-finance Institution: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/micro_finance_instit/num_finance_clients">
+          <label>Micro-finance Institution: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/micro_finance_instit/loan_portfolio">
+          <label>Micro-finance Institution: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/micro_finance_instit/avg_loan_size_indiv">
+          <label>Micro-finance Institution: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/micro_finance_instit/avg_loan_size_grp">
+          <label>Micro-finance Institution: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/cooperative_finance">
+        <label>Cooperative</label>
+        <input ref="/Agriculture/financing/cooperative_finance/num_finance_total">
+          <label>Cooperative: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/cooperative_finance/num_finance_clients">
+          <label>Cooperative: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/cooperative_finance/loan_portfolio">
+          <label>Cooperative: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/cooperative_finance/avg_loan_size_indiv">
+          <label>Cooperative: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/cooperative_finance/avg_loan_size_grp">
+          <label>Cooperative: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/financing/other_finance">
+        <label>Other</label>
+        <input ref="/Agriculture/financing/other_finance/num_finance_total">
+          <label>Other: Total number</label>
+        </input>
+        <input ref="/Agriculture/financing/other_finance/num_finance_clients">
+          <label>Other: Number of clients</label>
+        </input>
+        <input ref="/Agriculture/financing/other_finance/loan_portfolio">
+          <label>Other: Loan portfolio</label>
+        </input>
+        <input ref="/Agriculture/financing/other_finance/avg_loan_size_indiv">
+          <label>Other: Avg loan size per individual (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/financing/other_finance/avg_loan_size_grp">
+          <label>Other: Avg loan size per group (in Naira)</label>
+        </input>
+      </group>
+    </group>
+    <input ref="/Agriculture/instructions_input_cost">
+      <label>I will now ask you about the costs of inputs for crops, livestock and fisheries.</label>
+    </input>
+    <group nodeset="/Agriculture/input_cost">
+      <label>Agricultural Markets, Finance and Costs</label>
+      <group nodeset="/Agriculture/input_cost/crops">
+        <label>Crops</label>
+        <input ref="/Agriculture/input_cost/crops/num_ext_workers">
+          <label>Crops: Number of extension workers</label>
+        </input>
+        <input ref="/Agriculture/input_cost/crops/salary_ext_workers">
+          <label>Crops: Avg annual salary per extension worker (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/crops/cost_admin_ext_workers">
+          <label>Crops: Avg annual admin costs for managing extension workers (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/crops/cost_transport">
+          <label>Crops: Avg annual transport costs for providing services (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/input_cost/livestock">
+        <label>Livestock</label>
+        <input ref="/Agriculture/input_cost/livestock/num_ext_workers">
+          <label>Livestock: Number of extension workers</label>
+        </input>
+        <input ref="/Agriculture/input_cost/livestock/salary_ext_workers">
+          <label>Livestock: Avg annual salary per extension worker (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/livestock/cost_admin_ext_workers">
+          <label>Livestock: Avg annual admin costs for managing extension workers (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/livestock/cost_transport">
+          <label>Livestock: Avg annual transport costs for providing services (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/input_cost/fish">
+        <label>Fish</label>
+        <input ref="/Agriculture/input_cost/fish/num_ext_workers">
+          <label>Fish: Number of extension workers</label>
+        </input>
+        <input ref="/Agriculture/input_cost/fish/salary_ext_workers">
+          <label>Fish: Avg annual salary per extension worker (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/fish/cost_admin_ext_workers">
+          <label>Fish: Avg annual admin costs for managing extension workers (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/input_cost/fish/cost_transport">
+          <label>Fish: Avg annual transport costs for providing services (in Naira)</label>
+        </input>
+      </group>
+    </group>
+    <input ref="/Agriculture/num_agro_dealers">
+      <label>What is the total number of agro-dealers in the LGA?</label>
+    </input>
+    <input ref="/Agriculture/num_private_buyers">
+      <label>What is the total number of private buyers in the LGA?</label>
+    </input>
+    <input ref="/Agriculture/num_agri_research_ctr">
+      <label>What is the total number of agricultural research centers in the LGA?</label>
+    </input>
+    <input ref="/Agriculture/instructions_irrigation">
+      <label>I will now ask you about small scale irrigation in the LGA.</label>
+    </input>
+    <group nodeset="/Agriculture/irrigation">
+      <label>Irrigation</label>
+      <group nodeset="/Agriculture/irrigation/wtr_control">
+        <label>Water control structures (e.g. dams)</label>
+        <input ref="/Agriculture/irrigation/wtr_control/num_total_irrigation">
+          <label>Water control structures (e.g. dams): Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/num_functioning_irrigation">
+          <label>Water control structures (e.g. dams): Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/num_need_rehab_irrigation">
+          <label>Water control structures (e.g. dams): Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/num_staff_irrigation">
+          <label>Water control structures (e.g. dams): Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/num_hh_served_irrigation">
+          <label>Water control structures (e.g. dams): Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/cost_construction_irrigation">
+          <label>Water control structures (e.g. dams): Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/cost_maintain_irrigation">
+          <label>Water control structures (e.g. dams): Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/wtr_control/cost_admin_irrigation">
+          <label>Water control structures (e.g. dams): Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/irrigation/water_storage_pond">
+        <label>Water storage structures (ponds)</label>
+        <input ref="/Agriculture/irrigation/water_storage_pond/num_total_irrigation">
+          <label>Water storage structures (ponds): Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/num_functioning_irrigation">
+          <label>Water storage structures (ponds): Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/num_need_rehab_irrigation">
+          <label>Water storage structures (ponds): Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/num_staff_irrigation">
+          <label>Water storage structures (ponds): Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/num_hh_served_irrigation">
+          <label>Water storage structures (ponds): Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/cost_construction_irrigation">
+          <label>Water storage structures (ponds): Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/cost_maintain_irrigation">
+          <label>Water storage structures (ponds): Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_pond/cost_admin_irrigation">
+          <label>Water storage structures (ponds): Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/irrigation/water_storage_tank">
+        <label>Water storage structures (tanks)</label>
+        <input ref="/Agriculture/irrigation/water_storage_tank/num_total_irrigation">
+          <label>Water storage structures (tanks): Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/num_functioning_irrigation">
+          <label>Water storage structures (tanks): Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/num_need_rehab_irrigation">
+          <label>Water storage structures (tanks): Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/num_staff_irrigation">
+          <label>Water storage structures (tanks): Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/num_hh_served_irrigation">
+          <label>Water storage structures (tanks): Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/cost_construction_irrigation">
+          <label>Water storage structures (tanks): Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/cost_maintain_irrigation">
+          <label>Water storage structures (tanks): Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/water_storage_tank/cost_admin_irrigation">
+          <label>Water storage structures (tanks): Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/irrigation/well_deep">
+        <label>Deep wells</label>
+        <input ref="/Agriculture/irrigation/well_deep/num_total_irrigation">
+          <label>Deep wells: Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/num_functioning_irrigation">
+          <label>Deep wells: Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/num_need_rehab_irrigation">
+          <label>Deep wells: Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/num_staff_irrigation">
+          <label>Deep wells: Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/num_hh_served_irrigation">
+          <label>Deep wells: Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/cost_construction_irrigation">
+          <label>Deep wells: Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/cost_maintain_irrigation">
+          <label>Deep wells: Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_deep/cost_admin_irrigation">
+          <label>Deep wells: Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/irrigation/well_shallow">
+        <label>Shallow wells</label>
+        <input ref="/Agriculture/irrigation/well_shallow/num_total_irrigation">
+          <label>Shallow wells: Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/num_functioning_irrigation">
+          <label>Shallow wells: Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/num_need_rehab_irrigation">
+          <label>Shallow wells: Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/num_staff_irrigation">
+          <label>Shallow wells: Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/num_hh_served_irrigation">
+          <label>Shallow wells: Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/cost_construction_irrigation">
+          <label>Shallow wells: Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/cost_maintain_irrigation">
+          <label>Shallow wells: Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/well_shallow/cost_admin_irrigation">
+          <label>Shallow wells: Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+      <group nodeset="/Agriculture/irrigation/borehole">
+        <label>Boreholes</label>
+        <input ref="/Agriculture/irrigation/borehole/num_total_irrigation">
+          <label>Boreholes: Total number in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/num_functioning_irrigation">
+          <label>Boreholes: Number functioning in the LGA</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/num_need_rehab_irrigation">
+          <label>Boreholes: Number that require rehabilitation</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/num_staff_irrigation">
+          <label>Boreholes: Avg number of staff per facility</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/num_hh_served_irrigation">
+          <label>Boreholes: Avg number of households served</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/cost_construction_irrigation">
+          <label>Boreholes: Cost of construction (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/cost_maintain_irrigation">
+          <label>Boreholes: Avg annual maintenance cost (in Naira)</label>
+        </input>
+        <input ref="/Agriculture/irrigation/borehole/cost_admin_irrigation">
+          <label>Boreholes: Avg annual admin and other costs (in Naira)</label>
+        </input>
+      </group>
+    </group>
+  </h:body>
+</h:html>

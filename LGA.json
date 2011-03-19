@@ -1,0 +1,769 @@
+{
+    "type": "survey", 
+    "name": "LGA", 
+    "children": [
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/intro.xls"
+        }, 
+        {
+            "type": "text", 
+            "name": "lga_chairman_name", 
+            "label": "Name of the LGA chairman"
+        }, 
+        {
+            "type": "phone number", 
+            "name": "lga_chairman_phone", 
+            "label": "Contact phone number"
+        }, 
+        {
+            "type": "text", 
+            "name": "lga_secretary_name", 
+            "label": "Name of the LGA secretary"
+        }, 
+        {
+            "type": "phone number", 
+            "name": "lga_secretary_phone", 
+            "label": "Contact phone number"
+        }, 
+        {
+            "type": "integer", 
+            "name": "lga_population_num", 
+            "label": "Population of the lga"
+        }, 
+        {
+            "type": "integer", 
+            "name": "lga_population_year_collected", 
+            "label": "What year are these population data from?"
+        }, 
+        {
+            "type": "percentage", 
+            "name": "lga_population_rural", 
+            "label": "Percentage of population that is rural"
+        }, 
+        {
+            "type": "integer", 
+            "name": "lga_area", 
+            "label": "Area of the LGA in square kilometers"
+        }, 
+        {
+            "type": "integer", 
+            "name": "lga_staff_num", 
+            "label": "Total number of full-time employed staff"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_lga_staff", 
+            "label": "I will now ask some questions about staff, qualifications and salary for each sector."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_full_time_staff", 
+                    "label": "%(label)s: Number of full time staff"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "num_working_today_staff", 
+                    "label": "%(label)s: Number of staff working today"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "num_hired_12months_staff", 
+                    "label": "%(label)s: Number of new staff hired in the last 12 months"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "name_supervisory_counselor", 
+                    "label": "%(label)s: Name of supervisory counselor (4A.1)"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "qualif_supervisory_counselor", 
+                    "label": "%(label)s: Qualification of supervisory counselor (4A.2)"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "qualification_median", 
+                    "label": "%(label)s: Median qualification (4B.2)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "median_salary_ext_worker", 
+                    "label": "%(label)s: Median salary for extension worker (4D.1)"
+                }, 
+                {
+                    "type": "number of months in last year", 
+                    "name": "months_salary_on_time", 
+                    "label": "%(label)s: How many of the last 12 months were salaries paid on time?"
+                }, 
+                {
+                    "type": "phone number", 
+                    "name": "phone_supervisory_counselor", 
+                    "label": "%(label)s: Contact phone number of supervisory counselor"
+                }
+            ], 
+            "type": "loop", 
+            "name": "lga_staff", 
+            "columns": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management"
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health"
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education"
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture"
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure"
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ], 
+            "label": "LGA STAFF"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_budget", 
+            "label": "What is the annual LGA budget for each of the following sectors?"
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "budget_recurrent", 
+                    "label": "%(label)s: Recurrent budget"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "budget_capital", 
+                    "label": "%(label)s: Capital budget"
+                }, 
+                {
+                    "type": "percentage", 
+                    "name": "percent_disbursed_recurrent", 
+                    "label": "%(label)s: Percentage of RECURRENT budget disbursed till now for this year"
+                }, 
+                {
+                    "type": "percentage", 
+                    "name": "percent_disbursed_capital", 
+                    "label": "%(label)s: Percentage of CAPITAL budget disbursed till now for this year"
+                }
+            ], 
+            "type": "loop", 
+            "name": "lga_budget", 
+            "columns": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management"
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health"
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education"
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture"
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure"
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ], 
+            "label": "LGA BUDGET"
+        }, 
+        {
+            "children": [
+                {
+                    "choices": [
+                        {
+                            "name": "always", 
+                            "label": "Always"
+                        }, 
+                        {
+                            "name": "sometimes", 
+                            "label": "Sometimes"
+                        }, 
+                        {
+                            "name": "never", 
+                            "label": "Never"
+                        }, 
+                        {
+                            "name": "not_available", 
+                            "label": "Service not available at LGA office"
+                        }
+                    ], 
+                    "type": "select one", 
+                    "name": "reliability", 
+                    "label": "How would you rate the reliability of this service AT THE LGA OFFICE?"
+                }
+            ], 
+            "type": "loop", 
+            "name": "infrastructure", 
+            "columns": [
+                {
+                    "name": "electricity", 
+                    "label": "Electricity"
+                }, 
+                {
+                    "name": "water", 
+                    "label": "Water"
+                }, 
+                {
+                    "name": "internet", 
+                    "label": "Internet"
+                }, 
+                {
+                    "name": "security", 
+                    "label": "Security"
+                }, 
+                {
+                    "name": "cellular_coverage", 
+                    "label": "Cellular coverage"
+                }, 
+                {
+                    "name": "computer", 
+                    "label": "Computer"
+                }
+            ], 
+            "label": "INFRASTRUCTURE"
+        }, 
+        {
+            "type": "integer", 
+            "name": "state_capital_distance", 
+            "label": "What is the distance from the LGA to the state capital, measured in kilometers?"
+        }, 
+        {
+            "type": "integer", 
+            "name": "state_capital_journey_time", 
+            "label": "What is the journey time from the LGA to the state capital, measured in minutes?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "all_year", 
+                    "label": "All year"
+                }, 
+                {
+                    "name": "seasonal", 
+                    "label": "Seasonal"
+                }
+            ], 
+            "type": "select one", 
+            "name": "lga_hq_accessibility", 
+            "label": "How would you rate the accessibility to the LGA headquarters?"
+        }, 
+        {
+            "hint": "If not available, enter 0.", 
+            "type": "note", 
+            "name": "instructions_transport", 
+            "label": "I will now ask you about the available means of transport at the LGA office."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_total_transport", 
+                    "label": "Total number of %(label)s"
+                }, 
+                {
+                    "bind": {
+                        "constraint": ". <= ../num_total_transport"
+                    }, 
+                    "hint": "Cannot be more than the total number of %(label)s.", 
+                    "type": "integer", 
+                    "name": "num_functioning_transport", 
+                    "label": "Number of %(label)s functional"
+                }
+            ], 
+            "type": "loop", 
+            "name": "transportation", 
+            "columns": [
+                {
+                    "name": "transport_car", 
+                    "label": "Cars"
+                }, 
+                {
+                    "name": "transport_pick_up", 
+                    "label": "Pick ups"
+                }, 
+                {
+                    "name": "transport_motorcycle", 
+                    "label": "Motorcycles"
+                }, 
+                {
+                    "name": "transport_bicycle", 
+                    "label": "Bicycles"
+                }, 
+                {
+                    "name": "transport_boat", 
+                    "label": "Boats / Canoes"
+                }, 
+                {
+                    "name": "transport_other", 
+                    "label": "Other"
+                }
+            ], 
+            "label": "TRANSPORTATION"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_partners", 
+            "label": "I will now ask you about the development partners working in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "name_partner_org", 
+                    "label": "Name of partner organization/agency"
+                }, 
+                {
+                    "choices": [
+                        {
+                            "name": "bilateral", 
+                            "label": "Bilateral"
+                        }, 
+                        {
+                            "name": "multilateral", 
+                            "label": "Multilateral"
+                        }, 
+                        {
+                            "name": "ngo_domestic", 
+                            "label": "Domestic NGO"
+                        }, 
+                        {
+                            "name": "ngo_international", 
+                            "label": "International NGO"
+                        }
+                    ], 
+                    "type": "select one", 
+                    "name": "type_partner_org", 
+                    "label": "What type of organization is this development partner?"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "sector_partner_org", 
+                    "label": "Sector of operation"
+                }, 
+                {
+                    "type": "date", 
+                    "name": "start_partner_org", 
+                    "label": "Start date of initiatives"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "budget_partner_org", 
+                    "label": "Approximate annual budget (in Naira)"
+                }, 
+                {
+                    "type": "phone number", 
+                    "name": "phone_partner_org", 
+                    "label": "Local contact phone number"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "development_partners", 
+            "label": "PARTNERS"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_state_contacts", 
+            "label": "I will now ask you about your state-level contacts."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "state_contact_name", 
+                    "label": "Contact name"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "state_contact_position", 
+                    "label": "Position/Designation at the State"
+                }, 
+                {
+                    "type": "phone number", 
+                    "name": "state_contact_phone", 
+                    "label": "Contact phone number"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "state_level_contacts", 
+            "label": "STATE LEVEL CONTACTS"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_admin_data", 
+            "label": "I would like to learn about how you report administrative data to the state."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "person_data_reported_to", 
+                    "label": "Who does %(label)s report administrative data to?"
+                }, 
+                {
+                    "type": "text", 
+                    "name": "dept_data_reported_to", 
+                    "label": "Which department does %(label)s report administrative data to?"
+                }, 
+                {
+                    "type": "date", 
+                    "name": "date_admin_data_reported", 
+                    "label": "When was the last time %(label)s reported administrative data to the state?"
+                }
+            ], 
+            "type": "loop", 
+            "name": "admin_data", 
+            "columns": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management"
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health"
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education"
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture"
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure"
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ], 
+            "label": "Administrative data"
+        }, 
+        {
+            "type": "integer", 
+            "name": "num_total_markets", 
+            "label": "What is the number of major markets in the LGA?"
+        }, 
+        {
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "type": "integer", 
+            "name": "num_daily_markets", 
+            "label": "How many are daily markets?"
+        }, 
+        {
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "type": "integer", 
+            "name": "num_weekly_markets", 
+            "label": "How many are weekly markets?"
+        }, 
+        {
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "type": "integer", 
+            "name": "num_inaccessible_markets", 
+            "label": "How many markets were inaccessible during the previous month?"
+        }, 
+        {
+            "bind": {
+                "relevant": "${num_inaccessible_markets} > 0"
+            }, 
+            "type": "text", 
+            "name": "reason_inaccessible_markets", 
+            "label": "What are the main reasons that markets were inaccessible during the previous month?"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_schools", 
+            "label": "I will now ask you about schools in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_total_schools", 
+                    "label": "%(label)s: Total number in the LGA"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_schools>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_closed_schools", 
+                    "label": "%(label)s: Number closed in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_closed_schools > 0"
+                    }, 
+                    "type": "text", 
+                    "name": "reason_closed_schools", 
+                    "label": "%(label)s: Main reason for closure"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_closed_schools > 0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_days_closed_schools", 
+                    "label": "%(label)s: Avg number of days closed in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_schools>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "staff_total_schools", 
+                    "label": "%(label)s: Total number of staff in the schools"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_schools>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "staff_absent_schools", 
+                    "label": "%(label)s: Number of staff absent for at least 1 day in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_schools>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_inaccessible_schools", 
+                    "label": "%(label)s: Number of schools not accessible by road in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_inaccessible_schools > 0"
+                    }, 
+                    "type": "text", 
+                    "name": "reason_inaccessible_schools", 
+                    "label": "%(label)s: Main reason for no-access in the past month"
+                }
+            ], 
+            "type": "loop", 
+            "name": "school_inventory", 
+            "columns": [
+                {
+                    "name": "pre_primary", 
+                    "label": "Pre-primary"
+                }, 
+                {
+                    "name": "pre_and_primary", 
+                    "label": "Pre-primary & Primary"
+                }, 
+                {
+                    "name": "primary_only", 
+                    "label": "Primary only"
+                }, 
+                {
+                    "name": "jr_secondary", 
+                    "label": "Junior secondary school"
+                }, 
+                {
+                    "name": "sr_secondary", 
+                    "label": "Senior secondary school"
+                }, 
+                {
+                    "name": "jr_sr_secondary", 
+                    "label": "Junior secondary and senior secondary school"
+                }, 
+                {
+                    "name": "boarding_secondary", 
+                    "label": "Secondary school with boarding facilities"
+                }, 
+                {
+                    "name": "adult_education", 
+                    "label": "Adult education institution"
+                }, 
+                {
+                    "name": "religious", 
+                    "label": "Religious school"
+                }, 
+                {
+                    "name": "nomadic", 
+                    "label": "Nomadic school"
+                }
+            ], 
+            "label": "Facility inventory: Schools"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_clinics", 
+            "label": "I will now ask you about health facilities in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_total_clinics", 
+                    "label": "%(label)s: Total number in the LGA"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_clinics>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_closed_clinics", 
+                    "label": "%(label)s: Number closed in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_closed_clinics>0"
+                    }, 
+                    "type": "text", 
+                    "name": "reason_closed_clinics", 
+                    "label": "%(label)s: Main reason for closure"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_closed_clinics>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_days_closed_clinics", 
+                    "label": "%(label)s: Avg number of days closed in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_clinics>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "staff_total_clinics", 
+                    "label": "%(label)s: Total number of staff in the health facilities"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_clinics>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "staff_absent_clinics", 
+                    "label": "%(label)s: Number of staff absent for at least 1 day in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_clinics>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_inaccessible_clinics", 
+                    "label": "%(label)s: Number of facilities not accessible by road in the past month"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_inaccessible_clinics > 0"
+                    }, 
+                    "type": "text", 
+                    "name": "reason_inaccessible_clinics", 
+                    "label": "%(label)s: Main reason for no-access in the past month"
+                }
+            ], 
+            "type": "loop", 
+            "name": "clinic_inventory", 
+            "columns": [
+                {
+                    "name": "primary_hlt_ctr", 
+                    "label": "Primary health clinic"
+                }, 
+                {
+                    "name": "primary_hlt_care_ctr", 
+                    "label": "Primary health care center"
+                }, 
+                {
+                    "name": "health_post", 
+                    "label": "Health post"
+                }, 
+                {
+                    "name": "specialist_hospital", 
+                    "label": "Specialist hospital"
+                }, 
+                {
+                    "name": "general_hospital", 
+                    "label": "General hospital"
+                }, 
+                {
+                    "name": "maternity_hospital", 
+                    "label": "Maternity hospital"
+                }, 
+                {
+                    "name": "cottage_hospital", 
+                    "label": "Cottage hospital"
+                }, 
+                {
+                    "name": "comprehensive_hlt_ctr", 
+                    "label": "Comprehensive health center"
+                }, 
+                {
+                    "name": "dental_clinic", 
+                    "label": "Dental clinic"
+                }, 
+                {
+                    "name": "fed_medical_ctr", 
+                    "label": "Federal medical center"
+                }, 
+                {
+                    "name": "teaching_hospital", 
+                    "label": "Teaching hospital"
+                }, 
+                {
+                    "name": "ward_model_ctr", 
+                    "label": "Ward model primary health care center"
+                }, 
+                {
+                    "name": "dispensary", 
+                    "label": "Dispensary"
+                }
+            ], 
+            "label": "Facility inventory: Health facilities"
+        }, 
+        {
+            "type": "note", 
+            "name": "thank_you", 
+            "label": "Thank you so much for your time."
+        }
+    ]
+}

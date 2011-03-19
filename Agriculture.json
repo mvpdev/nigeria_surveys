@@ -1,0 +1,554 @@
+{
+    "type": "survey", 
+    "name": "Agriculture", 
+    "children": [
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/intro.xls"
+        }, 
+        {
+            "type": "text", 
+            "name": "lga_agriculture_point_person_name", 
+            "label": "Name of LGA Agriculture Point Person"
+        }, 
+        {
+            "type": "phone number", 
+            "name": "lga_agriculture_point_person_phone_number", 
+            "label": "Contact Phone Number of LGA Agriculture Point Person"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_crops", 
+            "label": "Please list the MOST COMMONLY GROWN crops in the LGA. List in order of importance. All prices are market prices per kilogram in Naira."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "name", 
+                    "label": "Name of crop"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_per_kg", 
+                    "label": "Average crop price in the LGA"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_during_harvest", 
+                    "label": "Average crop price during harvest"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_during_lean_season", 
+                    "label": "Average crop price during lean season"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_seeds", 
+                    "label": "Price of seeds"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_fertilizer", 
+                    "label": "Price of fertilizer"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_pesticide", 
+                    "label": "Price of pesticide"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_seedlings", 
+                    "label": "Price of seedlings"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_tractor", 
+                    "label": "Price of renting a tractor to plow 1 hectare"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "crop", 
+            "label": "Crop"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_livestock", 
+            "label": "Please list the MOST COMMONLY REARED livestock in the LGA. List in order of importance. All prices are market prices in Naira."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "name_livestock", 
+                    "label": "Name of livestock"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_animal", 
+                    "label": "Market price per animal"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_animal_harvest", 
+                    "label": "Average price per animal during harvest"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_animal_lean_season", 
+                    "label": "Average price per animal during during lean season"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_feed_kg", 
+                    "label": "Market price of feed per kilogram"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_vet", 
+                    "label": "Cost of veterinary services per animal"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_insemination", 
+                    "label": "Cost of artificial insemination per animal"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_shed", 
+                    "label": "Cost of shed"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_forrage_kg", 
+                    "label": "Cost of forrage per kilogram"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "livestock", 
+            "label": "Livestock"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_fish", 
+            "label": "Please list the MOST COMMONLY REARED fish in the LGA. List in order of importance. All prices are market prices in Naira."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "text", 
+                    "name": "name_fish", 
+                    "label": "Name of fish"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_crop_harvest", 
+                    "label": "Average fish price during harvest"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_crop_lean_season", 
+                    "label": "Average fish price during lean season"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_fish_pond", 
+                    "label": "Cost of constructing fish pond"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_fingerlets", 
+                    "label": "Cost of fingerlets"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_fish_net", 
+                    "label": "Market price of fishing net"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "price_fish_boat", 
+                    "label": "Market price of fishing boat"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_docking", 
+                    "label": "Cost of docking boat / landing facility"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "fish", 
+            "label": "Fish"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_facilities", 
+            "label": "I will now ask you about warehousing facilities in the LGA"
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_total_storage", 
+                    "label": "Total number of %(label)s"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_storage>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_functioning_storage", 
+                    "label": "Number of %(label)s functioning"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_storage>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_need_rehab_storage", 
+                    "label": "Number of %(label)s that require rehabilitation"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_storage>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_staff_storage", 
+                    "label": "Number of staff working for %(label)s in LGA"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_storage>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "capacity_storage", 
+                    "label": "Avg storage capacity of a %(label)s (in metric tons)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_construction_storage", 
+                    "label": "Avg cost of construction of a %(label)s"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_maintain_storage", 
+                    "label": "Avg annual cost of maintaining a %(label)s"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_rehab_storage", 
+                    "label": "Avg annual cost of rehabilitating a %(label)s"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_admin_storage", 
+                    "label": "Avg additional administrative cost per %(label)s"
+                }
+            ], 
+            "type": "loop", 
+            "name": "warehousing", 
+            "columns": [
+                {
+                    "name": "silos", 
+                    "label": "Silos"
+                }, 
+                {
+                    "name": "warehouses", 
+                    "label": "Warehouses"
+                }
+            ], 
+            "label": "Warehousing facilities"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_orgs", 
+            "label": "I will now ask you about producer-based organizations in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_orgs_total", 
+                    "label": "%(label)s: Number of organizations"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_orgs_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_orgs_staff", 
+                    "label": "%(label)s: Number of staff"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_orgs_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_orgs_members", 
+                    "label": "%(label)s: Number of members"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_orgs_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_orgs_active", 
+                    "label": "%(label)s: How many of these organizations are active?"
+                }
+            ], 
+            "type": "loop", 
+            "name": "producer_orgs", 
+            "columns": [
+                {
+                    "name": "federations", 
+                    "label": "Federations"
+                }, 
+                {
+                    "name": "cooperatives", 
+                    "label": "Cooperatives"
+                }, 
+                {
+                    "name": "associations", 
+                    "label": "Associations"
+                }, 
+                {
+                    "name": "groups", 
+                    "label": "Groups"
+                }
+            ], 
+            "label": "Producer organizations"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_finance", 
+            "label": "I will now ask you about agricultural finance institutions in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_finance_total", 
+                    "label": "%(label)s: Total number"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_finance_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_finance_clients", 
+                    "label": "%(label)s: Number of clients"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_finance_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "loan_portfolio", 
+                    "label": "%(label)s: Loan portfolio"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_finance_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "avg_loan_size_indiv", 
+                    "label": "%(label)s: Avg loan size per individual (in Naira)"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_finance_total>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "avg_loan_size_grp", 
+                    "label": "%(label)s: Avg loan size per group (in Naira)"
+                }
+            ], 
+            "type": "loop", 
+            "name": "financing", 
+            "columns": [
+                {
+                    "name": "commercial_bank", 
+                    "label": "Commercial Bank"
+                }, 
+                {
+                    "name": "agri_bank", 
+                    "label": "Agricultural Bank"
+                }, 
+                {
+                    "name": "state_bank", 
+                    "label": "State Bank"
+                }, 
+                {
+                    "name": "private_bank", 
+                    "label": "Private Bank"
+                }, 
+                {
+                    "name": "micro_finance_instit", 
+                    "label": "Micro-finance Institution"
+                }, 
+                {
+                    "name": "cooperative_finance", 
+                    "label": "Cooperative"
+                }, 
+                {
+                    "name": "other_finance", 
+                    "label": "Other"
+                }
+            ], 
+            "label": "Agricultural Markets, Finance and Costs"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_input_cost", 
+            "label": "I will now ask you about the costs of inputs for crops, livestock and fisheries."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_ext_workers", 
+                    "label": "%(label)s: Number of extension workers"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "salary_ext_workers", 
+                    "label": "%(label)s: Avg annual salary per extension worker (in Naira)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_admin_ext_workers", 
+                    "label": "%(label)s: Avg annual admin costs for managing extension workers (in Naira)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_transport", 
+                    "label": "%(label)s: Avg annual transport costs for providing services (in Naira)"
+                }
+            ], 
+            "type": "loop", 
+            "name": "input_cost", 
+            "columns": [
+                {
+                    "name": "crops", 
+                    "label": "Crops"
+                }, 
+                {
+                    "name": "livestock", 
+                    "label": "Livestock"
+                }, 
+                {
+                    "name": "fish", 
+                    "label": "Fish"
+                }
+            ], 
+            "label": "Agricultural Markets, Finance and Costs"
+        }, 
+        {
+            "type": "integer", 
+            "name": "num_agro_dealers", 
+            "label": "What is the total number of agro-dealers in the LGA?"
+        }, 
+        {
+            "type": "integer", 
+            "name": "num_private_buyers", 
+            "label": "What is the total number of private buyers in the LGA?"
+        }, 
+        {
+            "type": "integer", 
+            "name": "num_agri_research_ctr", 
+            "label": "What is the total number of agricultural research centers in the LGA?"
+        }, 
+        {
+            "type": "note", 
+            "name": "instructions_irrigation", 
+            "label": "I will now ask you about small scale irrigation in the LGA."
+        }, 
+        {
+            "children": [
+                {
+                    "type": "integer", 
+                    "name": "num_total_irrigation", 
+                    "label": "%(label)s: Total number in the LGA"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_irrigation>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_functioning_irrigation", 
+                    "label": "%(label)s: Number functioning in the LGA"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_irrigation>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_need_rehab_irrigation", 
+                    "label": "%(label)s: Number that require rehabilitation"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_irrigation>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_staff_irrigation", 
+                    "label": "%(label)s: Avg number of staff per facility"
+                }, 
+                {
+                    "bind": {
+                        "relevant": "../num_total_irrigation>0"
+                    }, 
+                    "type": "integer", 
+                    "name": "num_hh_served_irrigation", 
+                    "label": "%(label)s: Avg number of households served"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_construction_irrigation", 
+                    "label": "%(label)s: Cost of construction (in Naira)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_maintain_irrigation", 
+                    "label": "%(label)s: Avg annual maintenance cost (in Naira)"
+                }, 
+                {
+                    "type": "integer", 
+                    "name": "cost_admin_irrigation", 
+                    "label": "%(label)s: Avg annual admin and other costs (in Naira)"
+                }
+            ], 
+            "type": "loop", 
+            "name": "irrigation", 
+            "columns": [
+                {
+                    "name": "wtr_control", 
+                    "label": "Water control structures (e.g. dams)"
+                }, 
+                {
+                    "name": "water_storage_pond", 
+                    "label": "Water storage structures (ponds)"
+                }, 
+                {
+                    "name": "water_storage_tank", 
+                    "label": "Water storage structures (tanks)"
+                }, 
+                {
+                    "name": "well_deep", 
+                    "label": "Deep wells"
+                }, 
+                {
+                    "name": "well_shallow", 
+                    "label": "Shallow wells"
+                }, 
+                {
+                    "name": "borehole", 
+                    "label": "Boreholes"
+                }
+            ], 
+            "label": "Irrigation"
+        }
+    ]
+}

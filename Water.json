@@ -1,0 +1,404 @@
+{
+    "type": "survey", 
+    "name": "Water", 
+    "children": [
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/intro.xls"
+        }, 
+        {
+            "type": "text", 
+            "name": "locality", 
+            "label": "Which locality is this water scheme / source in or closest to?"
+        }, 
+        {
+            "type": "text", 
+            "name": "nearest_school_or_clinic", 
+            "label": "Which school or health clinic is this scheme / source closest to?"
+        }, 
+        {
+            "hint": "Write 'none' if there is no pre-existing ID number.", 
+            "type": "text", 
+            "name": "pre_existing_id", 
+            "label": "Please enter pre-existing ID number for this water point, if any."
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "borehole", 
+                    "label": "Borehole"
+                }, 
+                {
+                    "name": "tube_well", 
+                    "label": "Tube well"
+                }, 
+                {
+                    "name": "protected_dug_well", 
+                    "label": "Protected dug well"
+                }, 
+                {
+                    "name": "developed_protected_spring_water", 
+                    "label": "Developed/protected spring water"
+                }, 
+                {
+                    "name": "developed_and_treated_surface_water", 
+                    "label": "Developed and treated surface water"
+                }, 
+                {
+                    "name": "rainwater_harvesting_scheme", 
+                    "label": "Rainwater harvesting scheme"
+                }
+            ], 
+            "type": "select one or specify other", 
+            "name": "type", 
+            "label": "What kind of water scheme / source is this?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "single_point", 
+                    "label": "Single point (where the scheme is located)"
+                }, 
+                {
+                    "name": "multiple_points_within_100m", 
+                    "label": "Mulitple points less than 100m reticulation"
+                }, 
+                {
+                    "name": "multiple_points_within_1000m", 
+                    "label": "Multiple points less than 1km reticulation"
+                }, 
+                {
+                    "name": "multiple_points_beyond_1000m", 
+                    "label": "Multiple points more than 1km reticulation"
+                }
+            ], 
+            "type": "select one", 
+            "name": "distribution_type", 
+            "label": "What is the type of distribution of the water scheme / source?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "diesel", 
+                    "label": "Diesel pump"
+                }, 
+                {
+                    "name": "electric", 
+                    "label": "Electric motor pump"
+                }, 
+                {
+                    "name": "solar", 
+                    "label": "Solar pump"
+                }, 
+                {
+                    "name": "hand_pump", 
+                    "label": "Hand pump"
+                }, 
+                {
+                    "name": "rope_pulley", 
+                    "label": "Rope/pulley"
+                }, 
+                {
+                    "name": "animal", 
+                    "label": "Animal powered pump"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know."
+                }
+            ], 
+            "type": "select one or specify other", 
+            "name": "lift_mechanism", 
+            "label": "What is the lift mechanism at this water scheme / source?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government"
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government"
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community"
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual"
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner"
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization"
+                }
+            ], 
+            "type": "select one or specify other", 
+            "name": "developed_by", 
+            "label": "Who developed this water scheme / source?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government"
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government"
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community"
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual"
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner"
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization"
+                }
+            ], 
+            "type": "select all that apply or specify other", 
+            "name": "managed_by", 
+            "label": "Who manages this water scheme / source?"
+        }, 
+        {
+            "children": [
+                {
+                    "bind": {
+                        "relevant": "selected(${managed_by}, '%(name)s')"
+                    }, 
+                    "type": "text", 
+                    "name": "organization_name", 
+                    "label": "What is the name of the %(label)s organization that manages this water scheme / source?"
+                }
+            ], 
+            "type": "loop", 
+            "name": "managing_organizations", 
+            "columns": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government"
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government"
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community"
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual"
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner"
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization"
+                }
+            ], 
+            "label": "Managing Organizations"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ], 
+            "type": "select one", 
+            "name": "pay_for_water", 
+            "label": "Do people have to pay for water from this water scheme / source?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ], 
+            "type": "select one", 
+            "name": "used_today", 
+            "label": "Does it appear that this water source/scheme was used today?"
+        }, 
+        {
+            "bind": {
+                "relevant": "${used_today}='no'", 
+                "constraint": "not( selected(., 'no_diesel') and ${lift_mechanism}!='diesel' ) and not( selected(., 'no_electricity') and ${lift_mechanism}!='electric' )"
+            }, 
+            "choices": [
+                {
+                    "name": "pump_broken", 
+                    "label": "If a pump mechanism is used to lift the water - Pump mechanism is broken"
+                }, 
+                {
+                    "name": "no_diesel", 
+                    "label": "If there is a diesel powered pump mechanism - No diesel is available"
+                }, 
+                {
+                    "name": "no_electricity", 
+                    "label": "If there is a pump mechanism powered with electricity - No electricity is available"
+                }, 
+                {
+                    "name": "missing_stolen_parts", 
+                    "label": "Missing/stolen parts"
+                }, 
+                {
+                    "name": "lift_mechanism_broken", 
+                    "label": "Lift mechanism is broken"
+                }, 
+                {
+                    "name": "kiosk_tap_or_tank_broken", 
+                    "label": "Kiosk, tap, or tank is broken"
+                }, 
+                {
+                    "name": "poor_water_quality", 
+                    "label": "Poor water quality"
+                }, 
+                {
+                    "name": "dry_well", 
+                    "label": "The well is dry"
+                }, 
+                {
+                    "name": "still_under_construction", 
+                    "label": "Still under construction"
+                }, 
+                {
+                    "name": "dont_know", 
+                    "label": "Don’t know"
+                }
+            ], 
+            "type": "select all that apply or specify other", 
+            "name": "reasons_not_used", 
+            "label": "Why was the water scheme / source not used today?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "newly_constructed", 
+                    "label": "Newly constructed"
+                }, 
+                {
+                    "name": "well_maintained", 
+                    "label": "Not new but well maintained"
+                }, 
+                {
+                    "name": "poorly_maintained", 
+                    "label": "Poorly maintained"
+                }
+            ], 
+            "type": "select one", 
+            "name": "physical_state", 
+            "label": "What is the condition of the water scheme / source's physical infrastructure?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ], 
+            "type": "select one", 
+            "name": "other_close_water", 
+            "label": "Is there another safe / drinkable source within 1km of this water point?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "year_round", 
+                    "label": "It is used year round, all seasons."
+                }, 
+                {
+                    "name": "dry_seasons", 
+                    "label": "It is used only during the dry seasons."
+                }, 
+                {
+                    "name": "wet_seasons", 
+                    "label": "It is used only during the wet seasons."
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know."
+                }
+            ], 
+            "type": "select one or specify other", 
+            "name": "times_used", 
+            "label": "At which times of the year is this water scheme / source used?"
+        }, 
+        {
+            "choices": [
+                {
+                    "name": "nobody", 
+                    "label": "No one - completed on my own"
+                }, 
+                {
+                    "name": "lga_staff", 
+                    "label": "LGA staff person"
+                }, 
+                {
+                    "name": "community_mem", 
+                    "label": "Community members"
+                }
+            ], 
+            "type": "select all that apply", 
+            "name": "help_completed", 
+            "label": "Who helped you to complete the questionnaire?"
+        }, 
+        {
+            "type": "note", 
+            "name": "thank_you", 
+            "label": "Many thanks."
+        }
+    ]
+}
