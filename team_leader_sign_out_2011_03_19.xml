@@ -1,0 +1,375 @@
+<h:html xmlns:h="http://www.w3.org/1999/xhtml" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:jr="http://openrosa.org/javarosa" xmlns="http://www.w3.org/2002/xforms">
+  <h:head>
+    <h:title>team_leader_sign_out</h:title>
+    <model>
+      <instance>
+        <team_leader_sign_out id="team_leader_sign_out_2011_03_19">
+          <imei/>
+          <start_time/>
+          <end_time/>
+          <serial_number>
+            <barcode/>
+            <hand_written_code/>
+          </serial_number>
+          <name/>
+          <zone/>
+          <state_in_northwest/>
+          <state_in_southeast/>
+          <lga_in_jigawa/>
+          <lga_in_kaduna/>
+          <lga_in_kano/>
+          <lga_in_katsina/>
+          <lga_in_kebbi/>
+          <lga_in_sokoto/>
+          <lga_in_zamfara/>
+          <lga_in_abia/>
+          <lga_in_anambra/>
+          <lga_in_ebonyi/>
+          <lga_in_enugu/>
+          <lga_in_imo/>
+          <photo_of_team_leader/>
+          <photo_of_id/>
+          <photo_of_signature/>
+        </team_leader_sign_out>
+      </instance>
+      <bind nodeset="/team_leader_sign_out/imei" jr:preloadParams="deviceid" required="true()" type="string" jr:preload="property"/>
+      <bind nodeset="/team_leader_sign_out/start_time" jr:preloadParams="start" required="true()" type="dateTime" jr:preload="timestamp"/>
+      <bind nodeset="/team_leader_sign_out/end_time" jr:preloadParams="end" required="true()" type="dateTime" jr:preload="timestamp"/>
+      <bind nodeset="/team_leader_sign_out/serial_number/barcode" type="barcode" required="false()"/>
+      <bind nodeset="/team_leader_sign_out/serial_number/hand_written_code" type="string" required="false()"/>
+      <bind nodeset="/team_leader_sign_out/name" type="string" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/zone" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/state_in_northwest" relevant="/team_leader_sign_out/zone='northwest'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/state_in_southeast" relevant="/team_leader_sign_out/zone='southeast'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_jigawa" relevant="/team_leader_sign_out/state_in_northwest='jigawa'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_kaduna" relevant="/team_leader_sign_out/state_in_northwest='kaduna'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_kano" relevant="/team_leader_sign_out/state_in_northwest='kano'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_katsina" relevant="/team_leader_sign_out/state_in_northwest='katsina'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_kebbi" relevant="/team_leader_sign_out/state_in_northwest='kebbi'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_sokoto" relevant="/team_leader_sign_out/state_in_northwest='sokoto'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_zamfara" relevant="/team_leader_sign_out/state_in_northwest='zamfara'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_abia" relevant="/team_leader_sign_out/state_in_southeast='abia'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_anambra" relevant="/team_leader_sign_out/state_in_southeast='anambra'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_ebonyi" relevant="/team_leader_sign_out/state_in_southeast='ebonyi'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_enugu" relevant="/team_leader_sign_out/state_in_southeast='enugu'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/lga_in_imo" relevant="/team_leader_sign_out/state_in_southeast='imo'" type="select1" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/photo_of_team_leader" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/photo_of_id" required="true()"/>
+      <bind nodeset="/team_leader_sign_out/photo_of_signature" required="true()"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group>
+      <label>Serial Numbers</label>
+      <repeat nodeset="/team_leader_sign_out/serial_number">
+        <input ref="/team_leader_sign_out/serial_number/barcode">
+          <label>Capture Barcode</label>
+        </input>
+        <input ref="/team_leader_sign_out/serial_number/hand_written_code">
+          <label>Write in Assigned Code</label>
+        </input>
+      </repeat>
+    </group>
+    <input ref="/team_leader_sign_out/name">
+      <label>Name</label>
+    </input>
+    <select1 ref="/team_leader_sign_out/zone">
+      <label>Zone</label>
+      <item>
+        <label>Northwest</label>
+        <value>northwest</value>
+      </item>
+      <item>
+        <label>Southeast</label>
+        <value>southeast</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/state_in_northwest">
+      <label>State</label>
+      <item>
+        <label>Jigawa</label>
+        <value>jigawa</value>
+      </item>
+      <item>
+        <label>Kaduna</label>
+        <value>kaduna</value>
+      </item>
+      <item>
+        <label>Kano</label>
+        <value>kano</value>
+      </item>
+      <item>
+        <label>Katsina</label>
+        <value>katsina</value>
+      </item>
+      <item>
+        <label>Kebbi</label>
+        <value>kebbi</value>
+      </item>
+      <item>
+        <label>Sokoto</label>
+        <value>sokoto</value>
+      </item>
+      <item>
+        <label>Zamfara</label>
+        <value>zamfara</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/state_in_southeast">
+      <label>State</label>
+      <item>
+        <label>Abia</label>
+        <value>abia</value>
+      </item>
+      <item>
+        <label>Anambra</label>
+        <value>anambra</value>
+      </item>
+      <item>
+        <label>Ebonyi</label>
+        <value>ebonyi</value>
+      </item>
+      <item>
+        <label>Enugu</label>
+        <value>enugu</value>
+      </item>
+      <item>
+        <label>Imo</label>
+        <value>imo</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_jigawa">
+      <label>LGA</label>
+      <item>
+        <label>Guri</label>
+        <value>guri</value>
+      </item>
+      <item>
+        <label>Sule Tankakar</label>
+        <value>sule_tankakar</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_kaduna">
+      <label>LGA</label>
+      <item>
+        <label>Birnin Gwari</label>
+        <value>birnin_gwari</value>
+      </item>
+      <item>
+        <label>Ikara</label>
+        <value>ikara</value>
+      </item>
+      <item>
+        <label>Kachia</label>
+        <value>kachia</value>
+      </item>
+      <item>
+        <label>Lere</label>
+        <value>lere</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_kano">
+      <label>LGA</label>
+      <item>
+        <label>Gabasawa</label>
+        <value>gabasawa</value>
+      </item>
+      <item>
+        <label>Garun Mallam</label>
+        <value>garun_mallam</value>
+      </item>
+      <item>
+        <label>Takai</label>
+        <value>takai</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_katsina">
+      <label>LGA</label>
+      <item>
+        <label>Mashi</label>
+        <value>mashi</value>
+      </item>
+      <item>
+        <label>Musawa</label>
+        <value>musawa</value>
+      </item>
+      <item>
+        <label>kaita</label>
+        <value>kaita</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_kebbi">
+      <label>LGA</label>
+      <item>
+        <label>Augie</label>
+        <value>augie</value>
+      </item>
+      <item>
+        <label>Bunza</label>
+        <value>bunza</value>
+      </item>
+      <item>
+        <label>Suru</label>
+        <value>suru</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_sokoto">
+      <label>LGA</label>
+      <item>
+        <label>Binji</label>
+        <value>binji</value>
+      </item>
+      <item>
+        <label>Illela</label>
+        <value>illela</value>
+      </item>
+      <item>
+        <label>Tambuwal</label>
+        <value>tambuwal</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_zamfara">
+      <label>LGA</label>
+      <item>
+        <label>Bukkuyum</label>
+        <value>bukkuyum</value>
+      </item>
+      <item>
+        <label>Maru</label>
+        <value>maru</value>
+      </item>
+      <item>
+        <label>Zurmi</label>
+        <value>zurmi</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_abia">
+      <label>LGA</label>
+      <item>
+        <label>Ikwuano</label>
+        <value>ikwuano</value>
+      </item>
+      <item>
+        <label>Obi Nwa</label>
+        <value>obi_nwa</value>
+      </item>
+      <item>
+        <label>Ohafia</label>
+        <value>ohafia</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_anambra">
+      <label>LGA</label>
+      <item>
+        <label>Anambra West</label>
+        <value>anambra_west</value>
+      </item>
+      <item>
+        <label>Awka North</label>
+        <value>awka_north</value>
+      </item>
+      <item>
+        <label>Orumba South</label>
+        <value>orumba_south</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_ebonyi">
+      <label>LGA</label>
+      <item>
+        <label>Afikpo South</label>
+        <value>afikpo_south</value>
+      </item>
+      <item>
+        <label>Ikwo</label>
+        <value>ikwo</value>
+      </item>
+      <item>
+        <label>Izzi</label>
+        <value>izzi</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_enugu">
+      <label>LGA</label>
+      <item>
+        <label>Aninri</label>
+        <value>aninri</value>
+      </item>
+      <item>
+        <label>Igbo Etiti</label>
+        <value>igbo_etiti</value>
+      </item>
+      <item>
+        <label>Isi-Uzo</label>
+        <value>isi_uzo</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <select1 ref="/team_leader_sign_out/lga_in_imo">
+      <label>LGA</label>
+      <item>
+        <label>Ngor-Okpala</label>
+        <value>ngor_okpala</value>
+      </item>
+      <item>
+        <label>Unuimo</label>
+        <value>unuimo</value>
+      </item>
+      <item>
+        <label>Don't Know</label>
+        <value>dont_know</value>
+      </item>
+    </select1>
+    <upload ref="/team_leader_sign_out/photo_of_team_leader" mediatype="image/*">
+      <label>Photo of Team Leader</label>
+    </upload>
+    <upload ref="/team_leader_sign_out/photo_of_id" mediatype="image/*">
+      <label>Photo of Team Leader's ID</label>
+    </upload>
+    <upload ref="/team_leader_sign_out/photo_of_signature" mediatype="image/*">
+      <label>Photo of Team Leader's Signature</label>
+    </upload>
+  </h:body>
+</h:html>

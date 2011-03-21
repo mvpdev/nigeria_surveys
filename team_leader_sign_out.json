@@ -1,0 +1,57 @@
+{
+    "type": "survey", 
+    "name": "team_leader_sign_out", 
+    "children": [
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/meta.xls"
+        }, 
+        {
+            "children": [
+                {
+                    "bind": {
+                        "required": "false()"
+                    }, 
+                    "type": "barcode", 
+                    "name": "barcode", 
+                    "label": "Capture Barcode"
+                }, 
+                {
+                    "bind": {
+                        "required": "false()"
+                    }, 
+                    "type": "text", 
+                    "name": "hand_written_code", 
+                    "label": "Write in Assigned Code"
+                }
+            ], 
+            "type": "repeat", 
+            "name": "serial_number", 
+            "label": "Serial Numbers"
+        }, 
+        {
+            "type": "text", 
+            "name": "name", 
+            "label": "Name"
+        }, 
+        {
+            "type": "include", 
+            "name": "nigeria_surveys/zone_state_lga_dont_know.json"
+        }, 
+        {
+            "type": "photo", 
+            "name": "photo_of_team_leader", 
+            "label": "Photo of Team Leader"
+        }, 
+        {
+            "type": "photo", 
+            "name": "photo_of_id", 
+            "label": "Photo of Team Leader's ID"
+        }, 
+        {
+            "type": "photo", 
+            "name": "photo_of_signature", 
+            "label": "Photo of Team Leader's Signature"
+        }
+    ]
+}
