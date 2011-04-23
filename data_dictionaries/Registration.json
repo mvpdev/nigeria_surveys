@@ -1,0 +1,105 @@
+{
+    "name": "Registration", 
+    "type": "survey", 
+    "children": [
+        {
+            "name": "imei", 
+            "type": "imei"
+        }, 
+        {
+            "name": "start_time", 
+            "type": "start time"
+        }, 
+        {
+            "name": "end_time", 
+            "type": "end time"
+        }, 
+        {
+            "name": "name", 
+            "label": "What is your name?", 
+            "type": "text"
+        }, 
+        {
+            "name": "sex", 
+            "label": "What is your gender?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "male", 
+                    "label": "Male"
+                }, 
+                {
+                    "name": "female", 
+                    "label": "Female"
+                }
+            ]
+        }, 
+        {
+            "name": "birth_date", 
+            "label": "When were you born?", 
+            "type": "date"
+        }, 
+        {
+            "name": "languages", 
+            "bind": {
+                "constraint": "(.='none' or not(selected(., 'none')))"
+            }, 
+            "label": "What languages do you speak?", 
+            "type": "select all that apply", 
+            "children": [
+                {
+                    "name": "English", 
+                    "label": "English"
+                }, 
+                {
+                    "name": "Hausa", 
+                    "label": "Hausa"
+                }, 
+                {
+                    "name": "Igbo", 
+                    "label": "Igbo"
+                }, 
+                {
+                    "name": "Yoruba", 
+                    "label": "Yoruba"
+                }, 
+                {
+                    "name": "Fulfulde", 
+                    "label": "Fulfulde"
+                }, 
+                {
+                    "name": "Kanuri", 
+                    "label": "Kanuri"
+                }, 
+                {
+                    "name": "Ibibio", 
+                    "label": "Ibibio"
+                }, 
+                {
+                    "name": "none", 
+                    "label": "None"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "languages_other", 
+            "bind": {
+                "relevant": "selected(../languages, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "phone_id", 
+            "bind": {
+                "constraint": "regex(., '^\\d{3}$')"
+            }, 
+            "label": "What is the three digit label on the back of this phone?", 
+            "type": "text"
+        }
+    ]
+}

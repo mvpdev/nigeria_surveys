@@ -1,0 +1,945 @@
+{
+    "name": "Water", 
+    "type": "survey", 
+    "children": [
+        {
+            "name": "imei", 
+            "type": "imei"
+        }, 
+        {
+            "name": "start_time", 
+            "type": "start time"
+        }, 
+        {
+            "name": "end_time", 
+            "type": "end time"
+        }, 
+        {
+            "name": "research_assistant_name", 
+            "label": "Research Assistant's Name", 
+            "type": "text"
+        }, 
+        {
+            "name": "photo", 
+            "label": "Photo of Facility", 
+            "type": "photo"
+        }, 
+        {
+            "name": "location", 
+            "label": "Location", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "gps", 
+                    "hint": "Capture the geocode before entering the facility building.", 
+                    "label": "Geocode of Facility", 
+                    "type": "gps"
+                }, 
+                {
+                    "name": "zone", 
+                    "label": "Zone", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "northwest", 
+                            "label": "Northwest"
+                        }, 
+                        {
+                            "name": "southeast", 
+                            "label": "Southeast"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_northwest", 
+                    "bind": {
+                        "relevant": "${zone}='northwest'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "jigawa", 
+                            "label": "Jigawa"
+                        }, 
+                        {
+                            "name": "kaduna", 
+                            "label": "Kaduna"
+                        }, 
+                        {
+                            "name": "kano", 
+                            "label": "Kano"
+                        }, 
+                        {
+                            "name": "katsina", 
+                            "label": "Katsina"
+                        }, 
+                        {
+                            "name": "kebbi", 
+                            "label": "Kebbi"
+                        }, 
+                        {
+                            "name": "sokoto", 
+                            "label": "Sokoto"
+                        }, 
+                        {
+                            "name": "zamfara", 
+                            "label": "Zamfara"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_southeast", 
+                    "bind": {
+                        "relevant": "${zone}='southeast'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "abia", 
+                            "label": "Abia"
+                        }, 
+                        {
+                            "name": "anambra", 
+                            "label": "Anambra"
+                        }, 
+                        {
+                            "name": "ebonyi", 
+                            "label": "Ebonyi"
+                        }, 
+                        {
+                            "name": "enugu", 
+                            "label": "Enugu"
+                        }, 
+                        {
+                            "name": "imo", 
+                            "label": "Imo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_jigawa", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='jigawa'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "guri", 
+                            "label": "Guri"
+                        }, 
+                        {
+                            "name": "sule_tankakar", 
+                            "label": "Sule Tankakar"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kaduna", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kaduna'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "birnin_gwari", 
+                            "label": "Birnin Gwari"
+                        }, 
+                        {
+                            "name": "ikara", 
+                            "label": "Ikara"
+                        }, 
+                        {
+                            "name": "kachia", 
+                            "label": "Kachia"
+                        }, 
+                        {
+                            "name": "lere", 
+                            "label": "Lere"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kano", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kano'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "gabasawa", 
+                            "label": "Gabasawa"
+                        }, 
+                        {
+                            "name": "garun_mallam", 
+                            "label": "Garun Mallam"
+                        }, 
+                        {
+                            "name": "takai", 
+                            "label": "Takai"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_katsina", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='katsina'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "mashi", 
+                            "label": "Mashi"
+                        }, 
+                        {
+                            "name": "musawa", 
+                            "label": "Musawa"
+                        }, 
+                        {
+                            "name": "kaita", 
+                            "label": "kaita"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kebbi", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kebbi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "augie", 
+                            "label": "Augie"
+                        }, 
+                        {
+                            "name": "bunza", 
+                            "label": "Bunza"
+                        }, 
+                        {
+                            "name": "suru", 
+                            "label": "Suru"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_sokoto", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='sokoto'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "binji", 
+                            "label": "Binji"
+                        }, 
+                        {
+                            "name": "illela", 
+                            "label": "Illela"
+                        }, 
+                        {
+                            "name": "tambuwal", 
+                            "label": "Tambuwal"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_zamfara", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='zamfara'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "bukkuyum", 
+                            "label": "Bukkuyum"
+                        }, 
+                        {
+                            "name": "maru", 
+                            "label": "Maru"
+                        }, 
+                        {
+                            "name": "zurmi", 
+                            "label": "Zurmi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_abia", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='abia'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ikwuano", 
+                            "label": "Ikwuano"
+                        }, 
+                        {
+                            "name": "obi_nwa", 
+                            "label": "Obi Nwa"
+                        }, 
+                        {
+                            "name": "ohafia", 
+                            "label": "Ohafia"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_anambra", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='anambra'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "anambra_west", 
+                            "label": "Anambra West"
+                        }, 
+                        {
+                            "name": "awka_north", 
+                            "label": "Awka North"
+                        }, 
+                        {
+                            "name": "orumba_south", 
+                            "label": "Orumba South"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_ebonyi", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='ebonyi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "afikpo_south", 
+                            "label": "Afikpo South"
+                        }, 
+                        {
+                            "name": "ikwo", 
+                            "label": "Ikwo"
+                        }, 
+                        {
+                            "name": "izzi", 
+                            "label": "Izzi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_enugu", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='enugu'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "aninri", 
+                            "label": "Aninri"
+                        }, 
+                        {
+                            "name": "igbo_etiti", 
+                            "label": "Igbo Etiti"
+                        }, 
+                        {
+                            "name": "isi_uzo", 
+                            "label": "Isi-Uzo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_imo", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='imo'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ngor_okpala", 
+                            "label": "Ngor-Okpala"
+                        }, 
+                        {
+                            "name": "unuimo", 
+                            "label": "Unuimo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ward", 
+                    "label": "Ward", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community", 
+                    "type": "text"
+                }
+            ]
+        }, 
+        {
+            "name": "locality", 
+            "label": "Which locality is this water scheme / source in or closest to?", 
+            "type": "text"
+        }, 
+        {
+            "name": "nearest_school_or_clinic", 
+            "label": "Which school or health clinic is this scheme / source closest to?", 
+            "type": "text"
+        }, 
+        {
+            "name": "pre_existing_id", 
+            "hint": "Write 'none' if there is no pre-existing ID number.", 
+            "label": "Please enter pre-existing ID number for this water point, if any.", 
+            "type": "text"
+        }, 
+        {
+            "name": "type", 
+            "label": "What kind of water scheme / source is this?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "borehole", 
+                    "label": "Borehole"
+                }, 
+                {
+                    "name": "tube_well", 
+                    "label": "Tube well"
+                }, 
+                {
+                    "name": "protected_dug_well", 
+                    "label": "Protected dug well"
+                }, 
+                {
+                    "name": "developed_protected_spring_water", 
+                    "label": "Developed/protected spring water"
+                }, 
+                {
+                    "name": "developed_and_treated_surface_water", 
+                    "label": "Developed and treated surface water"
+                }, 
+                {
+                    "name": "rainwater_harvesting_scheme", 
+                    "label": "Rainwater harvesting scheme"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "type_other", 
+            "bind": {
+                "relevant": "selected(../type, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "distribution_type", 
+            "label": "What is the type of distribution of the water scheme / source?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "single_point", 
+                    "label": "Single point (where the scheme is located)"
+                }, 
+                {
+                    "name": "multiple_points_within_100m", 
+                    "label": "Mulitple points less than 100m reticulation"
+                }, 
+                {
+                    "name": "multiple_points_within_1000m", 
+                    "label": "Multiple points less than 1km reticulation"
+                }, 
+                {
+                    "name": "multiple_points_beyond_1000m", 
+                    "label": "Multiple points more than 1km reticulation"
+                }
+            ]
+        }, 
+        {
+            "name": "lift_mechanism", 
+            "label": "What is the lift mechanism at this water scheme / source?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "diesel", 
+                    "label": "Diesel pump"
+                }, 
+                {
+                    "name": "electric", 
+                    "label": "Electric motor pump"
+                }, 
+                {
+                    "name": "solar", 
+                    "label": "Solar pump"
+                }, 
+                {
+                    "name": "hand_pump", 
+                    "label": "Hand pump"
+                }, 
+                {
+                    "name": "rope_pulley", 
+                    "label": "Rope/pulley"
+                }, 
+                {
+                    "name": "animal", 
+                    "label": "Animal powered pump"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know."
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "lift_mechanism_other", 
+            "bind": {
+                "relevant": "selected(../lift_mechanism, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "developed_by", 
+            "label": "Who developed this water scheme / source?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government"
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government"
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community"
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual"
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner"
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "developed_by_other", 
+            "bind": {
+                "relevant": "selected(../developed_by, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "managed_by", 
+            "bind": {
+                "constraint": "(.='none' or not(selected(., 'none')))"
+            }, 
+            "label": "Who manages this water scheme / source?", 
+            "type": "select all that apply", 
+            "children": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government"
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government"
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community"
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual"
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner"
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization"
+                }, 
+                {
+                    "name": "none", 
+                    "label": "None"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "managed_by_other", 
+            "bind": {
+                "relevant": "selected(../managed_by, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "managing_organizations", 
+            "label": "Managing Organizations", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "federal_government", 
+                    "label": "Federal government", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'federal_government')"
+                            }, 
+                            "label": "What is the name of the Federal government organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_government", 
+                    "label": "State government", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'state_government')"
+                            }, 
+                            "label": "What is the name of the State government organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "local_government", 
+                    "label": "Local government", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'local_government')"
+                            }, 
+                            "label": "What is the name of the Local government organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'community')"
+                            }, 
+                            "label": "What is the name of the Community organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "individual", 
+                    "label": "Individual", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'individual')"
+                            }, 
+                            "label": "What is the name of the Individual organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "international_development_partner", 
+                    "label": "International development partner", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'international_development_partner')"
+                            }, 
+                            "label": "What is the name of the International development partner organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "private_organization", 
+                    "label": "Private organization", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "organization_name", 
+                            "bind": {
+                                "relevant": "selected(${managed_by}, 'private_organization')"
+                            }, 
+                            "label": "What is the name of the Private organization organization that manages this water scheme / source?", 
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "pay_for_water", 
+            "label": "Do people have to pay for water from this water scheme / source?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ]
+        }, 
+        {
+            "name": "used_today", 
+            "label": "Does it appear that this water source/scheme was used today?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ]
+        }, 
+        {
+            "name": "reasons_not_used", 
+            "bind": {
+                "relevant": "${used_today}='no'", 
+                "constraint": "not( selected(., 'no_diesel') and ${lift_mechanism}!='diesel' ) and not( selected(., 'no_electricity') and ${lift_mechanism}!='electric' ) and (.='none' or not(selected(., 'none')))"
+            }, 
+            "label": "Why was the water scheme / source not used today?", 
+            "type": "select all that apply", 
+            "children": [
+                {
+                    "name": "pump_broken", 
+                    "label": "If a pump mechanism is used to lift the water - Pump mechanism is broken"
+                }, 
+                {
+                    "name": "no_diesel", 
+                    "label": "If there is a diesel powered pump mechanism - No diesel is available"
+                }, 
+                {
+                    "name": "no_electricity", 
+                    "label": "If there is a pump mechanism powered with electricity - No electricity is available"
+                }, 
+                {
+                    "name": "missing_stolen_parts", 
+                    "label": "Missing/stolen parts"
+                }, 
+                {
+                    "name": "lift_mechanism_broken", 
+                    "label": "Lift mechanism is broken"
+                }, 
+                {
+                    "name": "kiosk_tap_or_tank_broken", 
+                    "label": "Kiosk, tap, or tank is broken"
+                }, 
+                {
+                    "name": "poor_water_quality", 
+                    "label": "Poor water quality"
+                }, 
+                {
+                    "name": "dry_well", 
+                    "label": "The well is dry"
+                }, 
+                {
+                    "name": "still_under_construction", 
+                    "label": "Still under construction"
+                }, 
+                {
+                    "name": "dont_know", 
+                    "label": "Don’t know"
+                }, 
+                {
+                    "name": "none", 
+                    "label": "None"
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "reasons_not_used_other", 
+            "bind": {
+                "relevant": "selected(../reasons_not_used, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "physical_state", 
+            "label": "What is the condition of the water scheme / source's physical infrastructure?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "newly_constructed", 
+                    "label": "Newly constructed"
+                }, 
+                {
+                    "name": "well_maintained", 
+                    "label": "Not new but well maintained"
+                }, 
+                {
+                    "name": "poorly_maintained", 
+                    "label": "Poorly maintained"
+                }
+            ]
+        }, 
+        {
+            "name": "other_close_water", 
+            "label": "Is there another safe / drinkable source within 1km of this water point?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "yes", 
+                    "label": "Yes"
+                }, 
+                {
+                    "name": "no", 
+                    "label": "No"
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know"
+                }
+            ]
+        }, 
+        {
+            "name": "times_used", 
+            "label": "At which times of the year is this water scheme / source used?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "year_round", 
+                    "label": "It is used year round, all seasons."
+                }, 
+                {
+                    "name": "dry_seasons", 
+                    "label": "It is used only during the dry seasons."
+                }, 
+                {
+                    "name": "wet_seasons", 
+                    "label": "It is used only during the wet seasons."
+                }, 
+                {
+                    "name": "do_not_know", 
+                    "label": "Don't know."
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other"
+                }
+            ]
+        }, 
+        {
+            "name": "times_used_other", 
+            "bind": {
+                "relevant": "selected(../times_used, 'other')"
+            }, 
+            "label": "Specify other.", 
+            "type": "text"
+        }, 
+        {
+            "name": "help_completed", 
+            "bind": {
+                "constraint": "(.='none' or not(selected(., 'none')))"
+            }, 
+            "label": "Who helped you to complete the questionnaire?", 
+            "type": "select all that apply", 
+            "children": [
+                {
+                    "name": "nobody", 
+                    "label": "No one - completed on my own"
+                }, 
+                {
+                    "name": "lga_staff", 
+                    "label": "LGA staff person"
+                }, 
+                {
+                    "name": "community_mem", 
+                    "label": "Community members"
+                }, 
+                {
+                    "name": "none", 
+                    "label": "None"
+                }
+            ]
+        }, 
+        {
+            "name": "thank_you", 
+            "label": "Many thanks.", 
+            "type": "note"
+        }
+    ]
+}

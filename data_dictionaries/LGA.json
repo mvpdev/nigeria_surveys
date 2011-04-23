@@ -1,0 +1,3253 @@
+{
+    "name": "LGA", 
+    "type": "survey", 
+    "children": [
+        {
+            "name": "imei", 
+            "type": "imei"
+        }, 
+        {
+            "name": "start_time", 
+            "type": "start time"
+        }, 
+        {
+            "name": "end_time", 
+            "type": "end time"
+        }, 
+        {
+            "name": "research_assistant_name", 
+            "label": "Research Assistant's Name", 
+            "type": "text"
+        }, 
+        {
+            "name": "photo", 
+            "label": "Photo of Facility", 
+            "type": "photo"
+        }, 
+        {
+            "name": "location", 
+            "label": "Location", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "gps", 
+                    "hint": "Capture the geocode before entering the facility building.", 
+                    "label": "Geocode of Facility", 
+                    "type": "gps"
+                }, 
+                {
+                    "name": "zone", 
+                    "label": "Zone", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "northwest", 
+                            "label": "Northwest"
+                        }, 
+                        {
+                            "name": "southeast", 
+                            "label": "Southeast"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_northwest", 
+                    "bind": {
+                        "relevant": "${zone}='northwest'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "jigawa", 
+                            "label": "Jigawa"
+                        }, 
+                        {
+                            "name": "kaduna", 
+                            "label": "Kaduna"
+                        }, 
+                        {
+                            "name": "kano", 
+                            "label": "Kano"
+                        }, 
+                        {
+                            "name": "katsina", 
+                            "label": "Katsina"
+                        }, 
+                        {
+                            "name": "kebbi", 
+                            "label": "Kebbi"
+                        }, 
+                        {
+                            "name": "sokoto", 
+                            "label": "Sokoto"
+                        }, 
+                        {
+                            "name": "zamfara", 
+                            "label": "Zamfara"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_southeast", 
+                    "bind": {
+                        "relevant": "${zone}='southeast'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "abia", 
+                            "label": "Abia"
+                        }, 
+                        {
+                            "name": "anambra", 
+                            "label": "Anambra"
+                        }, 
+                        {
+                            "name": "ebonyi", 
+                            "label": "Ebonyi"
+                        }, 
+                        {
+                            "name": "enugu", 
+                            "label": "Enugu"
+                        }, 
+                        {
+                            "name": "imo", 
+                            "label": "Imo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_jigawa", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='jigawa'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "guri", 
+                            "label": "Guri"
+                        }, 
+                        {
+                            "name": "sule_tankakar", 
+                            "label": "Sule Tankakar"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kaduna", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kaduna'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "birnin_gwari", 
+                            "label": "Birnin Gwari"
+                        }, 
+                        {
+                            "name": "ikara", 
+                            "label": "Ikara"
+                        }, 
+                        {
+                            "name": "kachia", 
+                            "label": "Kachia"
+                        }, 
+                        {
+                            "name": "lere", 
+                            "label": "Lere"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kano", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kano'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "gabasawa", 
+                            "label": "Gabasawa"
+                        }, 
+                        {
+                            "name": "garun_mallam", 
+                            "label": "Garun Mallam"
+                        }, 
+                        {
+                            "name": "takai", 
+                            "label": "Takai"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_katsina", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='katsina'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "mashi", 
+                            "label": "Mashi"
+                        }, 
+                        {
+                            "name": "musawa", 
+                            "label": "Musawa"
+                        }, 
+                        {
+                            "name": "kaita", 
+                            "label": "kaita"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kebbi", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kebbi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "augie", 
+                            "label": "Augie"
+                        }, 
+                        {
+                            "name": "bunza", 
+                            "label": "Bunza"
+                        }, 
+                        {
+                            "name": "suru", 
+                            "label": "Suru"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_sokoto", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='sokoto'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "binji", 
+                            "label": "Binji"
+                        }, 
+                        {
+                            "name": "illela", 
+                            "label": "Illela"
+                        }, 
+                        {
+                            "name": "tambuwal", 
+                            "label": "Tambuwal"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_zamfara", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='zamfara'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "bukkuyum", 
+                            "label": "Bukkuyum"
+                        }, 
+                        {
+                            "name": "maru", 
+                            "label": "Maru"
+                        }, 
+                        {
+                            "name": "zurmi", 
+                            "label": "Zurmi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_abia", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='abia'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ikwuano", 
+                            "label": "Ikwuano"
+                        }, 
+                        {
+                            "name": "obi_nwa", 
+                            "label": "Obi Nwa"
+                        }, 
+                        {
+                            "name": "ohafia", 
+                            "label": "Ohafia"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_anambra", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='anambra'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "anambra_west", 
+                            "label": "Anambra West"
+                        }, 
+                        {
+                            "name": "awka_north", 
+                            "label": "Awka North"
+                        }, 
+                        {
+                            "name": "orumba_south", 
+                            "label": "Orumba South"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_ebonyi", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='ebonyi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "afikpo_south", 
+                            "label": "Afikpo South"
+                        }, 
+                        {
+                            "name": "ikwo", 
+                            "label": "Ikwo"
+                        }, 
+                        {
+                            "name": "izzi", 
+                            "label": "Izzi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_enugu", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='enugu'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "aninri", 
+                            "label": "Aninri"
+                        }, 
+                        {
+                            "name": "igbo_etiti", 
+                            "label": "Igbo Etiti"
+                        }, 
+                        {
+                            "name": "isi_uzo", 
+                            "label": "Isi-Uzo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_imo", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='imo'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ngor_okpala", 
+                            "label": "Ngor-Okpala"
+                        }, 
+                        {
+                            "name": "unuimo", 
+                            "label": "Unuimo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ward", 
+                    "label": "Ward", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community", 
+                    "type": "text"
+                }
+            ]
+        }, 
+        {
+            "name": "lga_chairman_name", 
+            "label": "Name of the LGA chairman", 
+            "type": "text"
+        }, 
+        {
+            "name": "lga_chairman_phone", 
+            "label": "Contact phone number", 
+            "type": "phone number"
+        }, 
+        {
+            "name": "lga_secretary_name", 
+            "label": "Name of the LGA secretary", 
+            "type": "text"
+        }, 
+        {
+            "name": "lga_secretary_phone", 
+            "label": "Contact phone number", 
+            "type": "phone number"
+        }, 
+        {
+            "name": "lga_population_num", 
+            "label": "Population of the lga", 
+            "type": "integer"
+        }, 
+        {
+            "name": "lga_population_year_collected", 
+            "label": "What year are these population data from?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "lga_population_rural", 
+            "label": "Percentage of population that is rural", 
+            "type": "percentage"
+        }, 
+        {
+            "name": "lga_area", 
+            "label": "Area of the LGA in square kilometers", 
+            "type": "integer"
+        }, 
+        {
+            "name": "lga_staff_num", 
+            "label": "Total number of full-time employed staff", 
+            "type": "integer"
+        }, 
+        {
+            "name": "instructions_lga_staff", 
+            "label": "I will now ask some questions about staff, qualifications and salary for each sector.", 
+            "type": "note"
+        }, 
+        {
+            "name": "lga_staff", 
+            "label": "LGA STAFF", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Overall management: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Overall management: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Overall management: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Overall management: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Overall management: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Overall management: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Overall management: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Overall management: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Overall management: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Health: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Health: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Health: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Health: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Health: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Health: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Health: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Health: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Health: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Education: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Education: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Education: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Education: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Education: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Education: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Education: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Education: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Education: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Agriculture: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Agriculture: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Agriculture: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Agriculture: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Agriculture: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Agriculture: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Agriculture: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Agriculture: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Agriculture: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Public works/ Infrastructure: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Public works/ Infrastructure: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Public works/ Infrastructure: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Public works/ Infrastructure: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Public works/ Infrastructure: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Public works/ Infrastructure: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Public works/ Infrastructure: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Public works/ Infrastructure: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Public works/ Infrastructure: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Finance: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Finance: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Finance: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Finance: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Finance: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Finance: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Finance: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Finance: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Finance: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_full_time_staff", 
+                            "label": "Other: Number of full time staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_working_today_staff", 
+                            "label": "Other: Number of staff working today", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hired_12months_staff", 
+                            "label": "Other: Number of new staff hired in the last 12 months", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "name_supervisory_counselor", 
+                            "label": "Other: Name of supervisory counselor (4A.1)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualif_supervisory_counselor", 
+                            "label": "Other: Qualification of supervisory counselor (4A.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "qualification_median", 
+                            "label": "Other: Median qualification (4B.2)", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "median_salary_ext_worker", 
+                            "label": "Other: Median salary for extension worker (4D.1)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "months_salary_on_time", 
+                            "label": "Other: How many of the last 12 months were salaries paid on time?", 
+                            "type": "number of months in last year"
+                        }, 
+                        {
+                            "name": "phone_supervisory_counselor", 
+                            "label": "Other: Contact phone number of supervisory counselor", 
+                            "type": "phone number"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_budget", 
+            "label": "What is the annual LGA budget for each of the following sectors?", 
+            "type": "note"
+        }, 
+        {
+            "name": "lga_budget", 
+            "label": "LGA BUDGET", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Overall management: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Overall management: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Overall management: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Overall management: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Health: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Health: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Health: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Health: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Education: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Education: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Education: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Education: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Agriculture: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Agriculture: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Agriculture: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Agriculture: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Public works/ Infrastructure: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Public works/ Infrastructure: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Public works/ Infrastructure: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Public works/ Infrastructure: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Finance: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Finance: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Finance: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Finance: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "budget_recurrent", 
+                            "label": "Other: Recurrent budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "budget_capital", 
+                            "label": "Other: Capital budget", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "percent_disbursed_recurrent", 
+                            "label": "Other: Percentage of RECURRENT budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }, 
+                        {
+                            "name": "percent_disbursed_capital", 
+                            "label": "Other: Percentage of CAPITAL budget disbursed till now for this year", 
+                            "type": "percentage"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "infrastructure", 
+            "label": "INFRASTRUCTURE", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "electricity", 
+                    "label": "Electricity", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "water", 
+                    "label": "Water", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "internet", 
+                    "label": "Internet", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "security", 
+                    "label": "Security", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "cellular_coverage", 
+                    "label": "Cellular coverage", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                {
+                    "name": "computer", 
+                    "label": "Computer", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "reliability", 
+                            "label": "How would you rate the reliability of this service AT THE LGA OFFICE?", 
+                            "type": "select one", 
+                            "children": [
+                                {
+                                    "name": "always", 
+                                    "label": "Always"
+                                }, 
+                                {
+                                    "name": "sometimes", 
+                                    "label": "Sometimes"
+                                }, 
+                                {
+                                    "name": "never", 
+                                    "label": "Never"
+                                }, 
+                                {
+                                    "name": "not_available", 
+                                    "label": "Service not available at LGA office"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "state_capital_distance", 
+            "label": "What is the distance from the LGA to the state capital, measured in kilometers?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "state_capital_journey_time", 
+            "label": "What is the journey time from the LGA to the state capital, measured in minutes?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "lga_hq_accessibility", 
+            "label": "How would you rate the accessibility to the LGA headquarters?", 
+            "type": "select one", 
+            "children": [
+                {
+                    "name": "all_year", 
+                    "label": "All year"
+                }, 
+                {
+                    "name": "seasonal", 
+                    "label": "Seasonal"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_transport", 
+            "hint": "If not available, enter 0.", 
+            "label": "I will now ask you about the available means of transport at the LGA office.", 
+            "type": "note"
+        }, 
+        {
+            "name": "transportation", 
+            "label": "TRANSPORTATION", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "transport_car", 
+                    "label": "Cars", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Cars", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Cars.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Cars functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "transport_pick_up", 
+                    "label": "Pick ups", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Pick ups", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Pick ups.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Pick ups functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "transport_motorcycle", 
+                    "label": "Motorcycles", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Motorcycles", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Motorcycles.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Motorcycles functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "transport_bicycle", 
+                    "label": "Bicycles", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Bicycles", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Bicycles.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Bicycles functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "transport_boat", 
+                    "label": "Boats / Canoes", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Boats / Canoes", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Boats / Canoes.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Boats / Canoes functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "transport_other", 
+                    "label": "Other", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_transport", 
+                            "label": "Total number of Other", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_transport", 
+                            "hint": "Cannot be more than the total number of Other.", 
+                            "bind": {
+                                "constraint": ". <= ../num_total_transport"
+                            }, 
+                            "label": "Number of Other functional", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_partners", 
+            "label": "I will now ask you about the development partners working in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "development_partners", 
+            "label": "PARTNERS", 
+            "type": "repeat", 
+            "children": [
+                {
+                    "name": "name_partner_org", 
+                    "label": "Name of partner organization/agency", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "type_partner_org", 
+                    "label": "What type of organization is this development partner?", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "bilateral", 
+                            "label": "Bilateral"
+                        }, 
+                        {
+                            "name": "multilateral", 
+                            "label": "Multilateral"
+                        }, 
+                        {
+                            "name": "ngo_domestic", 
+                            "label": "Domestic NGO"
+                        }, 
+                        {
+                            "name": "ngo_international", 
+                            "label": "International NGO"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "sector_partner_org", 
+                    "label": "Sector of operation", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "start_partner_org", 
+                    "label": "Start date of initiatives", 
+                    "type": "date"
+                }, 
+                {
+                    "name": "budget_partner_org", 
+                    "label": "Approximate annual budget (in Naira)", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "phone_partner_org", 
+                    "label": "Local contact phone number", 
+                    "type": "phone number"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_state_contacts", 
+            "label": "I will now ask you about your state-level contacts.", 
+            "type": "note"
+        }, 
+        {
+            "name": "state_level_contacts", 
+            "label": "STATE LEVEL CONTACTS", 
+            "type": "repeat", 
+            "children": [
+                {
+                    "name": "state_contact_name", 
+                    "label": "Contact name", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "state_contact_position", 
+                    "label": "Position/Designation at the State", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "state_contact_phone", 
+                    "label": "Contact phone number", 
+                    "type": "phone number"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_admin_data", 
+            "label": "I would like to learn about how you report administrative data to the state.", 
+            "type": "note"
+        }, 
+        {
+            "name": "admin_data", 
+            "label": "Administrative data", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "overall_management", 
+                    "label": "Overall management", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Overall management report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Overall management report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Overall management reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "health", 
+                    "label": "Health", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Health report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Health report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Health reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "education", 
+                    "label": "Education", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Education report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Education report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Education reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "agriculture", 
+                    "label": "Agriculture", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Agriculture report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Agriculture report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Agriculture reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "public_works_infrastructure", 
+                    "label": "Public works/ Infrastructure", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Public works/ Infrastructure report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Public works/ Infrastructure report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Public works/ Infrastructure reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "finance", 
+                    "label": "Finance", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Finance report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Finance report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Finance reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "other", 
+                    "label": "Other", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "person_data_reported_to", 
+                            "label": "Who does Other report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "dept_data_reported_to", 
+                            "label": "Which department does Other report administrative data to?", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "date_admin_data_reported", 
+                            "label": "When was the last time Other reported administrative data to the state?", 
+                            "type": "date"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "num_total_markets", 
+            "label": "What is the number of major markets in the LGA?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "num_daily_markets", 
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "label": "How many are daily markets?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "num_weekly_markets", 
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "label": "How many are weekly markets?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "num_inaccessible_markets", 
+            "bind": {
+                "relevant": "${num_total_markets} >0", 
+                "constraint": ". <= ${num_total_markets}"
+            }, 
+            "label": "How many markets were inaccessible during the previous month?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "reason_inaccessible_markets", 
+            "bind": {
+                "relevant": "${num_inaccessible_markets} > 0"
+            }, 
+            "label": "What are the main reasons that markets were inaccessible during the previous month?", 
+            "type": "text"
+        }, 
+        {
+            "name": "instructions_schools", 
+            "label": "I will now ask you about schools in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "school_inventory", 
+            "label": "Facility inventory: Schools", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "pre_primary", 
+                    "label": "Pre-primary", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Pre-primary: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Pre-primary: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Pre-primary: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Pre-primary: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "pre_and_primary", 
+                    "label": "Pre-primary & Primary", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Pre-primary & Primary: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary & Primary: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Pre-primary & Primary: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Pre-primary & Primary: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary & Primary: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary & Primary: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Pre-primary & Primary: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Pre-primary & Primary: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "primary_only", 
+                    "label": "Primary only", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Primary only: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Primary only: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Primary only: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Primary only: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Primary only: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Primary only: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Primary only: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Primary only: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "jr_secondary", 
+                    "label": "Junior secondary school", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Junior secondary school: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary school: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Junior secondary school: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Junior secondary school: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary school: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary school: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary school: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Junior secondary school: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "sr_secondary", 
+                    "label": "Senior secondary school", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Senior secondary school: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Senior secondary school: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Senior secondary school: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Senior secondary school: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Senior secondary school: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Senior secondary school: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Senior secondary school: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Senior secondary school: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "jr_sr_secondary", 
+                    "label": "Junior secondary and senior secondary school", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Junior secondary and senior secondary school: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Junior secondary and senior secondary school: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "boarding_secondary", 
+                    "label": "Secondary school with boarding facilities", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Secondary school with boarding facilities: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Secondary school with boarding facilities: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "adult_education", 
+                    "label": "Adult education institution", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Adult education institution: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Adult education institution: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Adult education institution: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Adult education institution: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Adult education institution: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Adult education institution: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Adult education institution: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Adult education institution: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "religious", 
+                    "label": "Religious school", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Religious school: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Religious school: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Religious school: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Religious school: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Religious school: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Religious school: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Religious school: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Religious school: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "nomadic", 
+                    "label": "Nomadic school", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_schools", 
+                            "label": "Nomadic school: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Nomadic school: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Nomadic school: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_schools", 
+                            "bind": {
+                                "relevant": "../num_closed_schools > 0"
+                            }, 
+                            "label": "Nomadic school: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Nomadic school: Total number of staff in the schools", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Nomadic school: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_total_schools>0"
+                            }, 
+                            "label": "Nomadic school: Number of schools not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_schools", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_schools > 0"
+                            }, 
+                            "label": "Nomadic school: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_clinics", 
+            "label": "I will now ask you about health facilities in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "clinic_inventory", 
+            "label": "Facility inventory: Health facilities", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "primary_hlt_ctr", 
+                    "label": "Primary health clinic", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Primary health clinic: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health clinic: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Primary health clinic: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "primary_hlt_care_ctr", 
+                    "label": "Primary health care center", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Primary health care center: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Primary health care center: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Primary health care center: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "health_post", 
+                    "label": "Health post", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Health post: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Health post: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Health post: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Health post: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Health post: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Health post: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Health post: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Health post: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "specialist_hospital", 
+                    "label": "Specialist hospital", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Specialist hospital: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Specialist hospital: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Specialist hospital: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "general_hospital", 
+                    "label": "General hospital", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "General hospital: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "General hospital: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "General hospital: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "General hospital: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "General hospital: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "General hospital: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "General hospital: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "General hospital: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "maternity_hospital", 
+                    "label": "Maternity hospital", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Maternity hospital: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Maternity hospital: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Maternity hospital: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "cottage_hospital", 
+                    "label": "Cottage hospital", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Cottage hospital: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Cottage hospital: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Cottage hospital: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "comprehensive_hlt_ctr", 
+                    "label": "Comprehensive health center", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Comprehensive health center: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Comprehensive health center: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Comprehensive health center: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "dental_clinic", 
+                    "label": "Dental clinic", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Dental clinic: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dental clinic: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Dental clinic: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "fed_medical_ctr", 
+                    "label": "Federal medical center", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Federal medical center: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Federal medical center: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Federal medical center: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "teaching_hospital", 
+                    "label": "Teaching hospital", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Teaching hospital: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Teaching hospital: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Teaching hospital: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ward_model_ctr", 
+                    "label": "Ward model primary health care center", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Ward model primary health care center: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Ward model primary health care center: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Ward model primary health care center: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "dispensary", 
+                    "label": "Dispensary", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_clinics", 
+                            "label": "Dispensary: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dispensary: Number closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Dispensary: Main reason for closure", 
+                            "type": "text"
+                        }, 
+                        {
+                            "name": "num_days_closed_clinics", 
+                            "bind": {
+                                "relevant": "../num_closed_clinics>0"
+                            }, 
+                            "label": "Dispensary: Avg number of days closed in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_total_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dispensary: Total number of staff in the health facilities", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "staff_absent_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dispensary: Number of staff absent for at least 1 day in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_total_clinics>0"
+                            }, 
+                            "label": "Dispensary: Number of facilities not accessible by road in the past month", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "reason_inaccessible_clinics", 
+                            "bind": {
+                                "relevant": "../num_inaccessible_clinics > 0"
+                            }, 
+                            "label": "Dispensary: Main reason for no-access in the past month", 
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "thank_you", 
+            "label": "Thank you so much for your time.", 
+            "type": "note"
+        }
+    ]
+}

@@ -1,0 +1,1660 @@
+{
+    "name": "Agriculture", 
+    "type": "survey", 
+    "children": [
+        {
+            "name": "imei", 
+            "type": "imei"
+        }, 
+        {
+            "name": "start_time", 
+            "type": "start time"
+        }, 
+        {
+            "name": "end_time", 
+            "type": "end time"
+        }, 
+        {
+            "name": "research_assistant_name", 
+            "label": "Research Assistant's Name", 
+            "type": "text"
+        }, 
+        {
+            "name": "photo", 
+            "label": "Photo of Facility", 
+            "type": "photo"
+        }, 
+        {
+            "name": "location", 
+            "label": "Location", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "gps", 
+                    "hint": "Capture the geocode before entering the facility building.", 
+                    "label": "Geocode of Facility", 
+                    "type": "gps"
+                }, 
+                {
+                    "name": "zone", 
+                    "label": "Zone", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "northwest", 
+                            "label": "Northwest"
+                        }, 
+                        {
+                            "name": "southeast", 
+                            "label": "Southeast"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_northwest", 
+                    "bind": {
+                        "relevant": "${zone}='northwest'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "jigawa", 
+                            "label": "Jigawa"
+                        }, 
+                        {
+                            "name": "kaduna", 
+                            "label": "Kaduna"
+                        }, 
+                        {
+                            "name": "kano", 
+                            "label": "Kano"
+                        }, 
+                        {
+                            "name": "katsina", 
+                            "label": "Katsina"
+                        }, 
+                        {
+                            "name": "kebbi", 
+                            "label": "Kebbi"
+                        }, 
+                        {
+                            "name": "sokoto", 
+                            "label": "Sokoto"
+                        }, 
+                        {
+                            "name": "zamfara", 
+                            "label": "Zamfara"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_in_southeast", 
+                    "bind": {
+                        "relevant": "${zone}='southeast'"
+                    }, 
+                    "label": "State", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "abia", 
+                            "label": "Abia"
+                        }, 
+                        {
+                            "name": "anambra", 
+                            "label": "Anambra"
+                        }, 
+                        {
+                            "name": "ebonyi", 
+                            "label": "Ebonyi"
+                        }, 
+                        {
+                            "name": "enugu", 
+                            "label": "Enugu"
+                        }, 
+                        {
+                            "name": "imo", 
+                            "label": "Imo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_jigawa", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='jigawa'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "guri", 
+                            "label": "Guri"
+                        }, 
+                        {
+                            "name": "sule_tankakar", 
+                            "label": "Sule Tankakar"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kaduna", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kaduna'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "birnin_gwari", 
+                            "label": "Birnin Gwari"
+                        }, 
+                        {
+                            "name": "ikara", 
+                            "label": "Ikara"
+                        }, 
+                        {
+                            "name": "kachia", 
+                            "label": "Kachia"
+                        }, 
+                        {
+                            "name": "lere", 
+                            "label": "Lere"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kano", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kano'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "gabasawa", 
+                            "label": "Gabasawa"
+                        }, 
+                        {
+                            "name": "garun_mallam", 
+                            "label": "Garun Mallam"
+                        }, 
+                        {
+                            "name": "takai", 
+                            "label": "Takai"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_katsina", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='katsina'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "mashi", 
+                            "label": "Mashi"
+                        }, 
+                        {
+                            "name": "musawa", 
+                            "label": "Musawa"
+                        }, 
+                        {
+                            "name": "kaita", 
+                            "label": "kaita"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_kebbi", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='kebbi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "augie", 
+                            "label": "Augie"
+                        }, 
+                        {
+                            "name": "bunza", 
+                            "label": "Bunza"
+                        }, 
+                        {
+                            "name": "suru", 
+                            "label": "Suru"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_sokoto", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='sokoto'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "binji", 
+                            "label": "Binji"
+                        }, 
+                        {
+                            "name": "illela", 
+                            "label": "Illela"
+                        }, 
+                        {
+                            "name": "tambuwal", 
+                            "label": "Tambuwal"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_zamfara", 
+                    "bind": {
+                        "relevant": "${state_in_northwest}='zamfara'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "bukkuyum", 
+                            "label": "Bukkuyum"
+                        }, 
+                        {
+                            "name": "maru", 
+                            "label": "Maru"
+                        }, 
+                        {
+                            "name": "zurmi", 
+                            "label": "Zurmi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_abia", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='abia'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ikwuano", 
+                            "label": "Ikwuano"
+                        }, 
+                        {
+                            "name": "obi_nwa", 
+                            "label": "Obi Nwa"
+                        }, 
+                        {
+                            "name": "ohafia", 
+                            "label": "Ohafia"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_anambra", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='anambra'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "anambra_west", 
+                            "label": "Anambra West"
+                        }, 
+                        {
+                            "name": "awka_north", 
+                            "label": "Awka North"
+                        }, 
+                        {
+                            "name": "orumba_south", 
+                            "label": "Orumba South"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_ebonyi", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='ebonyi'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "afikpo_south", 
+                            "label": "Afikpo South"
+                        }, 
+                        {
+                            "name": "ikwo", 
+                            "label": "Ikwo"
+                        }, 
+                        {
+                            "name": "izzi", 
+                            "label": "Izzi"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_enugu", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='enugu'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "aninri", 
+                            "label": "Aninri"
+                        }, 
+                        {
+                            "name": "igbo_etiti", 
+                            "label": "Igbo Etiti"
+                        }, 
+                        {
+                            "name": "isi_uzo", 
+                            "label": "Isi-Uzo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "lga_in_imo", 
+                    "bind": {
+                        "relevant": "${state_in_southeast}='imo'"
+                    }, 
+                    "label": "LGA", 
+                    "type": "select one", 
+                    "children": [
+                        {
+                            "name": "ngor_okpala", 
+                            "label": "Ngor-Okpala"
+                        }, 
+                        {
+                            "name": "unuimo", 
+                            "label": "Unuimo"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "ward", 
+                    "label": "Ward", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "community", 
+                    "label": "Community", 
+                    "type": "text"
+                }
+            ]
+        }, 
+        {
+            "name": "lga_agriculture_point_person_name", 
+            "label": "Name of LGA Agriculture Point Person", 
+            "type": "text"
+        }, 
+        {
+            "name": "lga_agriculture_point_person_phone_number", 
+            "label": "Contact Phone Number of LGA Agriculture Point Person", 
+            "type": "phone number"
+        }, 
+        {
+            "name": "instructions_crops", 
+            "label": "Please list the MOST COMMONLY GROWN crops in the LGA. List in order of importance. All prices are market prices per kilogram in Naira.", 
+            "type": "note"
+        }, 
+        {
+            "name": "crop", 
+            "label": "Crop", 
+            "type": "repeat", 
+            "children": [
+                {
+                    "name": "name", 
+                    "label": "Name of crop", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "price_per_kg", 
+                    "label": "Average crop price in the LGA", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_during_harvest", 
+                    "label": "Average crop price during harvest", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_during_lean_season", 
+                    "label": "Average crop price during lean season", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_seeds", 
+                    "label": "Price of seeds", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_fertilizer", 
+                    "label": "Price of fertilizer", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_pesticide", 
+                    "label": "Price of pesticide", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_seedlings", 
+                    "label": "Price of seedlings", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_tractor", 
+                    "label": "Price of renting a tractor to plow 1 hectare", 
+                    "type": "integer"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_livestock", 
+            "label": "Please list the MOST COMMONLY REARED livestock in the LGA. List in order of importance. All prices are market prices in Naira.", 
+            "type": "note"
+        }, 
+        {
+            "name": "livestock", 
+            "label": "Livestock", 
+            "type": "repeat", 
+            "children": [
+                {
+                    "name": "name_livestock", 
+                    "label": "Name of livestock", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "price_animal", 
+                    "label": "Market price per animal", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_animal_harvest", 
+                    "label": "Average price per animal during harvest", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_animal_lean_season", 
+                    "label": "Average price per animal during during lean season", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_feed_kg", 
+                    "label": "Market price of feed per kilogram", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_vet", 
+                    "label": "Cost of veterinary services per animal", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_insemination", 
+                    "label": "Cost of artificial insemination per animal", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_shed", 
+                    "label": "Cost of shed", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_forrage_kg", 
+                    "label": "Cost of forrage per kilogram", 
+                    "type": "integer"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_fish", 
+            "label": "Please list the MOST COMMONLY REARED fish in the LGA. List in order of importance. All prices are market prices in Naira.", 
+            "type": "note"
+        }, 
+        {
+            "name": "fish", 
+            "label": "Fish", 
+            "type": "repeat", 
+            "children": [
+                {
+                    "name": "name_fish", 
+                    "label": "Name of fish", 
+                    "type": "text"
+                }, 
+                {
+                    "name": "price_crop_harvest", 
+                    "label": "Average fish price during harvest", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_crop_lean_season", 
+                    "label": "Average fish price during lean season", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_fish_pond", 
+                    "label": "Cost of constructing fish pond", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_fingerlets", 
+                    "label": "Cost of fingerlets", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_fish_net", 
+                    "label": "Market price of fishing net", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "price_fish_boat", 
+                    "label": "Market price of fishing boat", 
+                    "type": "integer"
+                }, 
+                {
+                    "name": "cost_docking", 
+                    "label": "Cost of docking boat / landing facility", 
+                    "type": "integer"
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_facilities", 
+            "label": "I will now ask you about warehousing facilities in the LGA", 
+            "type": "note"
+        }, 
+        {
+            "name": "warehousing", 
+            "label": "Warehousing facilities", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "silos", 
+                    "label": "Silos", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_storage", 
+                            "label": "Total number of Silos", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of Silos functioning", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of Silos that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of staff working for Silos in LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "capacity_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Avg storage capacity of a Silos (in metric tons)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_storage", 
+                            "label": "Avg cost of construction of a Silos", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_storage", 
+                            "label": "Avg annual cost of maintaining a Silos", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_rehab_storage", 
+                            "label": "Avg annual cost of rehabilitating a Silos", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_storage", 
+                            "label": "Avg additional administrative cost per Silos", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "warehouses", 
+                    "label": "Warehouses", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_storage", 
+                            "label": "Total number of Warehouses", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of Warehouses functioning", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of Warehouses that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Number of staff working for Warehouses in LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "capacity_storage", 
+                            "bind": {
+                                "relevant": "../num_total_storage>0"
+                            }, 
+                            "label": "Avg storage capacity of a Warehouses (in metric tons)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_storage", 
+                            "label": "Avg cost of construction of a Warehouses", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_storage", 
+                            "label": "Avg annual cost of maintaining a Warehouses", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_rehab_storage", 
+                            "label": "Avg annual cost of rehabilitating a Warehouses", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_storage", 
+                            "label": "Avg additional administrative cost per Warehouses", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_orgs", 
+            "label": "I will now ask you about producer-based organizations in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "producer_orgs", 
+            "label": "Producer organizations", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "federations", 
+                    "label": "Federations", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_orgs_total", 
+                            "label": "Federations: Number of organizations", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_staff", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Federations: Number of staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_members", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Federations: Number of members", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_active", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Federations: How many of these organizations are active?", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "cooperatives", 
+                    "label": "Cooperatives", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_orgs_total", 
+                            "label": "Cooperatives: Number of organizations", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_staff", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Cooperatives: Number of staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_members", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Cooperatives: Number of members", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_active", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Cooperatives: How many of these organizations are active?", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "associations", 
+                    "label": "Associations", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_orgs_total", 
+                            "label": "Associations: Number of organizations", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_staff", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Associations: Number of staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_members", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Associations: Number of members", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_active", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Associations: How many of these organizations are active?", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "groups", 
+                    "label": "Groups", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_orgs_total", 
+                            "label": "Groups: Number of organizations", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_staff", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Groups: Number of staff", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_members", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Groups: Number of members", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_orgs_active", 
+                            "bind": {
+                                "relevant": "../num_orgs_total>0"
+                            }, 
+                            "label": "Groups: How many of these organizations are active?", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_finance", 
+            "label": "I will now ask you about agricultural finance institutions in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "financing", 
+            "label": "Agricultural Markets, Finance and Costs", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "commercial_bank", 
+                    "label": "Commercial Bank", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Commercial Bank: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Commercial Bank: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Commercial Bank: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Commercial Bank: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Commercial Bank: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "agri_bank", 
+                    "label": "Agricultural Bank", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Agricultural Bank: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Agricultural Bank: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Agricultural Bank: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Agricultural Bank: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Agricultural Bank: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "state_bank", 
+                    "label": "State Bank", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "State Bank: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "State Bank: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "State Bank: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "State Bank: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "State Bank: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "private_bank", 
+                    "label": "Private Bank", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Private Bank: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Private Bank: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Private Bank: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Private Bank: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Private Bank: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "micro_finance_instit", 
+                    "label": "Micro-finance Institution", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Micro-finance Institution: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Micro-finance Institution: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Micro-finance Institution: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Micro-finance Institution: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Micro-finance Institution: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "cooperative_finance", 
+                    "label": "Cooperative", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Cooperative: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Cooperative: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Cooperative: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Cooperative: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Cooperative: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "other_finance", 
+                    "label": "Other", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_finance_total", 
+                            "label": "Other: Total number", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_finance_clients", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Other: Number of clients", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "loan_portfolio", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Other: Loan portfolio", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_indiv", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Other: Avg loan size per individual (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "avg_loan_size_grp", 
+                            "bind": {
+                                "relevant": "../num_finance_total>0"
+                            }, 
+                            "label": "Other: Avg loan size per group (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "instructions_input_cost", 
+            "label": "I will now ask you about the costs of inputs for crops, livestock and fisheries.", 
+            "type": "note"
+        }, 
+        {
+            "name": "input_cost", 
+            "label": "Agricultural Markets, Finance and Costs", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "crops", 
+                    "label": "Crops", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_ext_workers", 
+                            "label": "Crops: Number of extension workers", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "salary_ext_workers", 
+                            "label": "Crops: Avg annual salary per extension worker (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_ext_workers", 
+                            "label": "Crops: Avg annual admin costs for managing extension workers (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_transport", 
+                            "label": "Crops: Avg annual transport costs for providing services (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "livestock", 
+                    "label": "Livestock", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_ext_workers", 
+                            "label": "Livestock: Number of extension workers", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "salary_ext_workers", 
+                            "label": "Livestock: Avg annual salary per extension worker (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_ext_workers", 
+                            "label": "Livestock: Avg annual admin costs for managing extension workers (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_transport", 
+                            "label": "Livestock: Avg annual transport costs for providing services (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "fish", 
+                    "label": "Fish", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_ext_workers", 
+                            "label": "Fish: Number of extension workers", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "salary_ext_workers", 
+                            "label": "Fish: Avg annual salary per extension worker (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_ext_workers", 
+                            "label": "Fish: Avg annual admin costs for managing extension workers (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_transport", 
+                            "label": "Fish: Avg annual transport costs for providing services (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "name": "num_agro_dealers", 
+            "label": "What is the total number of agro-dealers in the LGA?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "num_private_buyers", 
+            "label": "What is the total number of private buyers in the LGA?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "num_agri_research_ctr", 
+            "label": "What is the total number of agricultural research centers in the LGA?", 
+            "type": "integer"
+        }, 
+        {
+            "name": "instructions_irrigation", 
+            "label": "I will now ask you about small scale irrigation in the LGA.", 
+            "type": "note"
+        }, 
+        {
+            "name": "irrigation", 
+            "label": "Irrigation", 
+            "type": "group", 
+            "children": [
+                {
+                    "name": "wtr_control", 
+                    "label": "Water control structures (e.g. dams)", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Water control structures (e.g. dams): Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water control structures (e.g. dams): Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water control structures (e.g. dams): Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water control structures (e.g. dams): Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water control structures (e.g. dams): Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Water control structures (e.g. dams): Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Water control structures (e.g. dams): Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Water control structures (e.g. dams): Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "water_storage_pond", 
+                    "label": "Water storage structures (ponds)", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Water storage structures (ponds): Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (ponds): Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (ponds): Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (ponds): Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (ponds): Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Water storage structures (ponds): Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Water storage structures (ponds): Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Water storage structures (ponds): Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "water_storage_tank", 
+                    "label": "Water storage structures (tanks)", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Water storage structures (tanks): Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (tanks): Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (tanks): Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (tanks): Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Water storage structures (tanks): Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Water storage structures (tanks): Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Water storage structures (tanks): Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Water storage structures (tanks): Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "well_deep", 
+                    "label": "Deep wells", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Deep wells: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Deep wells: Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Deep wells: Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Deep wells: Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Deep wells: Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Deep wells: Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Deep wells: Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Deep wells: Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "well_shallow", 
+                    "label": "Shallow wells", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Shallow wells: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Shallow wells: Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Shallow wells: Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Shallow wells: Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Shallow wells: Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Shallow wells: Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Shallow wells: Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Shallow wells: Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }, 
+                {
+                    "name": "borehole", 
+                    "label": "Boreholes", 
+                    "type": "group", 
+                    "children": [
+                        {
+                            "name": "num_total_irrigation", 
+                            "label": "Boreholes: Total number in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_functioning_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Boreholes: Number functioning in the LGA", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_need_rehab_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Boreholes: Number that require rehabilitation", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_staff_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Boreholes: Avg number of staff per facility", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "num_hh_served_irrigation", 
+                            "bind": {
+                                "relevant": "../num_total_irrigation>0"
+                            }, 
+                            "label": "Boreholes: Avg number of households served", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_construction_irrigation", 
+                            "label": "Boreholes: Cost of construction (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_maintain_irrigation", 
+                            "label": "Boreholes: Avg annual maintenance cost (in Naira)", 
+                            "type": "integer"
+                        }, 
+                        {
+                            "name": "cost_admin_irrigation", 
+                            "label": "Boreholes: Avg annual admin and other costs (in Naira)", 
+                            "type": "integer"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
